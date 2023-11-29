@@ -6,11 +6,14 @@ categories: [Blogging, Tutorial]
 tags: [typography]
 math: true
 mermaid: true
+layout: default
+comments: true
 image:
   path: /commons/devices-mockup.png
   lqip: data:image/webp;base64,UklGRpoAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSDIAAAARL0AmbZurmr57yyIiqE8oiG0bejIYEQTgqiDA9vqnsUSI6H+oAERp2HZ65qP/VIAWAFZQOCBCAAAA8AEAnQEqEAAIAAVAfCWkAALp8sF8rgRgAP7o9FDvMCkMde9PK7euH5M1m6VWoDXf2FkP3BqV0ZYbO6NA/VFIAAAA
   alt: Responsive rendering of Chirpy theme on multiple devices.
 ---
+
 
 이 포스트는 [**Chirpy**](https://github.com/cotes2020/jekyll-theme-chirpy/fork)에서의 Markdown 구문 렌더링을 보여주기 위한 것이며,
 또한 쓰기의 예로 사용할 수 있습니다. 이제 텍스트와 타이포그래피를 살펴보겠습니다.
