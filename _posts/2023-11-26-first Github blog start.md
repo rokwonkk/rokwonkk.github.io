@@ -4,7 +4,6 @@ author: cotes
 date: 2023-11-26 13:35:00 +0800
 categories: [Blogging, Tutorial]
 tags: [getting started]
-pin: true
 img_path: '/posts/20180809'
 ---
 
