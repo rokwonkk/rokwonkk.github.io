@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>rokwonkk</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2023-11-29T13:02:55+09:00</updated>
+  <updated>2023-11-29T15:04:33+09:00</updated>
   <author>
     <name>로건리</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,240 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>우여곡절 끝에 GitHub blog 페이지 띄우기 성공!!</title>
+    <link href="http://localhost:4000/posts/%EC%95%88%EB%85%95%ED%95%98%EC%84%B8%EC%9A%94!-Github-blog-start/" rel="alternate" type="text/html" title="우여곡절 끝에 GitHub blog 페이지 띄우기 성공!!" />
+    <published>2023-11-29T14:35:00+09:00</published>
+  
+    <updated>2023-11-29T14:35:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/%EC%95%88%EB%85%95%ED%95%98%EC%84%B8%EC%9A%94!-Github-blog-start/</id>
+    <content src="http://localhost:4000/posts/%EC%95%88%EB%85%95%ED%95%98%EC%84%B8%EC%9A%94!-Github-blog-start/" />
+    <author>
+      <name>cotes</name>
+    </author>
+
+  
+    
+    <category term="Blogging" />
+    
+    <category term="Tutorial" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      아 여기까지 오기도 정말 힘들었네요.
+
+전제조건
+
+기본 환경 설치를 완료하려면 Jekyll Docs 의 지침을 따르세요.
+ Git 도 설치해야 합니다.
+
+설치
+
+새 사이트 만들기
+
+이 테마에 대한 새 저장소를 만드는 방법에는 두 가지가 있습니다.:
+
+
+  Chirpy Starter 사용 - 업그레이드가 쉽고 관련 없는 프로젝트 파일을 격리하여 글쓰기에 집중할 수 있습니다.
+  GitHub Fork - 맞춤형 개발에는 편리하지만 업그레이드가 어렵습니다. Jekyll에 익숙하지 않고 이 프로젝트를 수정하거나 기여할 생각이 없다면 이 접근 방식은 권장되지 않습니다.
+
+
+옵션 1. Chirpy Starter 사용
+
+GitHub에 로그인하고 Chirpy Starter 로 이동한 후, Use this templa...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>hello</title>
+    <link href="http://localhost:4000/posts/write-a-new-post/" rel="alternate" type="text/html" title="hello" />
+    <published>2023-11-28T12:10:00+09:00</published>
+  
+    <updated>2023-11-29T03:10:26+09:00</updated>
+  
+    <id>http://localhost:4000/posts/write-a-new-post/</id>
+    <content src="http://localhost:4000/posts/write-a-new-post/" />
+    <author>
+      <name>cotes</name>
+    </author>
+
+  
+    
+    <category term="Blogging" />
+    
+    <category term="Tutorial" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      This tutorial will guide you how to write a post in the Chirpy template, and it’s worth reading even if you’ve used Jekyll before, as many features require specific variables to be set.
+
+Naming and Path
+
+Create a new file named YYYY-MM-DD-TITLE.EXTENSION and put it in the _posts of the root directory. Please note that the EXTENSION must be one of md and markdown. If you want to save time of cre...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Customize the Favicon</title>
+    <link href="http://localhost:4000/posts/customize-the-favicon/" rel="alternate" type="text/html" title="Customize the Favicon" />
+    <published>2019-08-11T01:34:00+09:00</published>
+  
+    <updated>2023-11-29T03:10:26+09:00</updated>
+  
+    <id>http://localhost:4000/posts/customize-the-favicon/</id>
+    <content src="http://localhost:4000/posts/customize-the-favicon/" />
+    <author>
+      <name>cotes</name>
+    </author>
+
+  
+    
+    <category term="Blogging" />
+    
+    <category term="Tutorial" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      The favicons of Chirpy are placed in the directory assets/img/favicons/. You may want to replace them with your own. The following sections will guide you to create and replace the default favicons.
+
+Generate the favicon
+
+Prepare a square image (PNG, JPG, or SVG) with a size of 512x512 or more, and then go to the online tool Real Favicon Generator and click the button Select your Favicon image ...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Getting Started</title>
+    <link href="http://localhost:4000/posts/getting-started/" rel="alternate" type="text/html" title="Getting Started" />
+    <published>2019-08-09T21:55:00+09:00</published>
+  
+    <updated>2023-11-29T03:10:26+09:00</updated>
+  
+    <id>http://localhost:4000/posts/getting-started/</id>
+    <content src="http://localhost:4000/posts/getting-started/" />
+    <author>
+      <name>cotes</name>
+    </author>
+
+  
+    
+    <category term="Blogging" />
+    
+    <category term="Tutorial" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Prerequisites
+
+Follow the instructions in the Jekyll Docs to complete the installation of the basic environment. Git also needs to be installed.
+
+Installation
+
+Creating a New Site
+
+There are two ways to create a new repository for this theme:
+
+
+  Using the Chirpy Starter - Easy to upgrade, isolates irrelevant project files so you can focus on writing.
+  GitHub Fork - Convenient for custom devel...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Text and Typography</title>
+    <link href="http://localhost:4000/posts/text-and-typography/" rel="alternate" type="text/html" title="Text and Typography" />
+    <published>2019-08-08T12:33:00+09:00</published>
+  
+    <updated>2023-11-29T03:10:26+09:00</updated>
+  
+    <id>http://localhost:4000/posts/text-and-typography/</id>
+    <content src="http://localhost:4000/posts/text-and-typography/" />
+    <author>
+      <name>cotes</name>
+    </author>
+
+  
+    
+    <category term="Blogging" />
+    
+    <category term="Demo" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      This post is to show Markdown syntax rendering on Chirpy, you can also use it as an example of writing. Now, let’s start looking at text and typography.
+
+Headings
+
+H1 - heading
+
+H2 - heading
+
+H3 - heading
+
+H4 - heading
+
+Paragraph
+
+Quisque egestas convallis ipsum, ut sollicitudin risus tincidunt a. Maecenas interdum malesuada egestas. Duis consectetur porta risus, sit amet vulputate urna facilis...
+    </summary>
+  
+
+  </entry>
 
 </feed>
 
