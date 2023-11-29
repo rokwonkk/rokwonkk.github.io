@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>rokwonkk</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2023-11-30T00:48:12+09:00</updated>
+  <updated>2023-11-30T01:08:30+09:00</updated>
   <author>
     <name>로건리</name>
     <uri>http://localhost:4000/</uri>
@@ -17,62 +17,6 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
-
-  
-  <entry>
-    <title>오늘 처음 쓰는 포스팅</title>
-    <link href="http://localhost:4000/posts/%EC%83%88%EB%A1%9C%EC%9A%B4-%ED%8F%AC%EC%8A%A4%ED%8A%B8/" rel="alternate" type="text/html" title="오늘 처음 쓰는 포스팅" />
-    <published>2023-11-29T23:22:00+09:00</published>
-  
-    <updated>2023-11-29T23:22:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/%EC%83%88%EB%A1%9C%EC%9A%B4-%ED%8F%AC%EC%8A%A4%ED%8A%B8/</id>
-    <content src="http://localhost:4000/posts/%EC%83%88%EB%A1%9C%EC%9A%B4-%ED%8F%AC%EC%8A%A4%ED%8A%B8/" />
-    <author>
-      <name>cotes</name>
-    </author>
-
-  
-    
-    <category term="일상" />
-    
-    <category term="Tutorial" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      1.카테고리
-
-
-  여기는어디?
-
-
-3 안녕하세요
-
-latest tag로 코드를 확인합니다. (기본 브랜치의 코드는 개발 중이므로 안정성을 보장하기 위해 최신 태그로 이동).
-비필요한 샘플 파일을 제거하고 GitHub 관련 파일을 처리합니다.
-JavaScript 파일을 빌드하고 assets/js/dist/에 내보내어 Git으로 추적되도록 만듭니다.
-위의 변경 사항을 저장하기 위해 자동으로 새로운 커밋을 만듭니다.
-
-오늘도..
-
-하지만 우리
-
-오늘도역시
-
-파이팅데스요
-
-    </summary>
-  
-
-  </entry>
 
   
   <entry>
@@ -124,7 +68,7 @@ JavaScript 파일을 빌드하고 assets/js/dist/에 내보내어 Git으로 추�
     <link href="http://localhost:4000/posts/text-and-typography/" rel="alternate" type="text/html" title="텍스트 및 타이포그래피" />
     <published>2023-11-28T19:23:00+09:00</published>
   
-    <updated>2023-11-29T21:38:55+09:00</updated>
+    <updated>2023-11-30T00:55:35+09:00</updated>
   
     <id>http://localhost:4000/posts/text-and-typography/</id>
     <content src="http://localhost:4000/posts/text-and-typography/" />
@@ -261,7 +205,7 @@ date: YYYY-MM-DD HH:MM:...
     <link href="http://localhost:4000/posts/first-Github-blog-start/" rel="alternate" type="text/html" title="기본으로 생성되는 튜토리얼 번역으로 블로그를 시작해보자" />
     <published>2023-11-26T14:35:00+09:00</published>
   
-    <updated>2023-11-29T23:28:56+09:00</updated>
+    <updated>2023-11-30T00:55:35+09:00</updated>
   
     <id>http://localhost:4000/posts/first-Github-blog-start/</id>
     <content src="http://localhost:4000/posts/first-Github-blog-start/" />
