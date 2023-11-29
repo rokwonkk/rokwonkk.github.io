@@ -4,7 +4,6 @@ author: cotes
 date: 2023-11-28 11:33:00 +0110
 categories: [Blogging, Demo]
 tags: [typography]
-pin: true
 math: true
 mermaid: true
 image:
