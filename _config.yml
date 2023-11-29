@@ -34,7 +34,7 @@ twitter:
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: your_full_name
+  name: 로건리
   email: example@domain.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
@@ -73,7 +73,7 @@ theme_mode: # [light|dark]
 img_cdn: "https://chirpy-img.netlify.app"
 
 # the avatar on sidebar, support local or CORS resources
-avatar: "/commons/avatar.jpg"
+avatar: "/assets/avatar/MyPicture.jpeg"
 
 # boolean type, the global switch for TOC in posts.
 toc: true
