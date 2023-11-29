@@ -32,7 +32,13 @@ const resource = [
     '/assets/img/favicons/favicon.ico',
     '/assets/img/favicons/mstile-150x150.png',
     '/assets/img/favicons/profile-pic.png',
-    '/assets/img/favicons/safari-pinned-tab.svg'
+    '/assets/img/favicons/safari-pinned-tab.svg',
+    '/assets/js/dist/categories.min.js',
+    '/assets/js/dist/commons.min.js',
+    '/assets/js/dist/home.min.js',
+    '/assets/js/dist/misc.min.js',
+    '/assets/js/dist/page.min.js',
+    '/assets/js/dist/post.min.js'
 ];
 
 /* The request url with below domain will be cached */

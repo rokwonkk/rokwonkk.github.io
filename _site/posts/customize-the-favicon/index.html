@@ -50,7 +50,7 @@
 <meta name="twitter:site" content="@twitter_username" />
 <meta name="twitter:creator" content="@rokwonkk" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"rokwonkk","url":"https://github.com/rokwonkk/"},"dateModified":"2023-11-29T01:34:00+09:00","datePublished":"2023-11-29T01:34:00+09:00","description":"Chirpy의 favicons은 assets/img/favicons/디렉토리에 위치합니다. 여러분은 여러분만의 이미지로 대체하고 싶을 것입니다. 다음 섹션에서는 기본 파비콘을 생성하고 대체하는 방법을 안내합니다.","headline":"Favicon 사용자 정의","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/customize-the-favicon/"},"url":"http://localhost:4000/posts/customize-the-favicon/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"rokwonkk","url":"https://github.com/rokwonkk/"},"dateModified":"2023-11-29T23:28:56+09:00","datePublished":"2023-11-29T01:34:00+09:00","description":"Chirpy의 favicons은 assets/img/favicons/디렉토리에 위치합니다. 여러분은 여러분만의 이미지로 대체하고 싶을 것입니다. 다음 섹션에서는 기본 파비콘을 생성하고 대체하는 방법을 안내합니다.","headline":"Favicon 사용자 정의","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/customize-the-favicon/"},"url":"http://localhost:4000/posts/customize-the-favicon/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -106,8 +106,6 @@
 
   <link rel="stylesheet" href="/assets/css/jekyll-theme-chirpy.css">
 
-  
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.21.3/dist/tocbot.min.css">
   
 
   
@@ -647,6 +645,29 @@
 
       <!-- lastmod date -->
       
+        <span>
+          Updated
+          <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1701268136"
+  data-df="ll"
+  
+    data-bs-toggle="tooltip" data-bs-placement="bottom"
+  
+>
+  Nov 29, 2023
+</time>
+
+        </span>
+      
 
       
 
@@ -756,7 +777,7 @@
       <div class="post-meta mb-3">
         <i class="far fa-folder-open fa-fw me-1"></i>
         
-          <a href="/categories/blogging/">Blogging</a>,
+          <a href="/categories/blog/">Blog</a>,
           <a href="/categories/tutorial/">Tutorial</a>
       </div>
     
@@ -874,7 +895,7 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/text-and-typography/">텍스트 및 타이포그래피</a>
+          <a href="/posts/first-Github-blog-start/">기본으로 생성되는 튜토리얼 번역으로 블로그를 시작해보자</a>
         </li>
       
         
@@ -888,7 +909,21 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/first-Github-blog-start/">기본으로 생성되는 튜토리얼 번역으로 블로그를 시작해보자</a>
+          <a href="/posts/customize-the-favicon/">Favicon 사용자 정의</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/text-and-typography/">텍스트 및 타이포그래피</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/getting-started/">Getting Started</a>
         </li>
       
     </ul>
@@ -917,17 +952,6 @@
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
   
     
     
@@ -937,20 +961,6 @@
         
         
 
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
   
     
     
@@ -972,7 +982,26 @@
     
     
     
+  
+    
+    
+    
+    
       
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
     
   
     
@@ -997,10 +1026,10 @@
     <div class="d-flex flex-wrap mt-3 mb-1 me-3">
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/favicon/">favicon</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/getting-started/">getting started</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/getting-started/">getting started</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/favicon/">favicon</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/typography/">typography</a>
@@ -1019,11 +1048,6 @@
               
 
 
-
-  <section id="toc-wrapper" class="ps-0 pe-4">
-    <h2 class="panel-heading ps-3 pt-2 mb-2">Contents</h2>
-    <nav id="toc"></nav>
-  </section>
 
 
             
@@ -1062,6 +1086,30 @@
 
   
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
   
 
   
@@ -1282,15 +1330,87 @@ H4 - 제목
   
 
   
-    <div class="btn btn-outline-primary disabled" aria-label="Newer">
-      <p>-</p>
-    </div>
+    <a
+      href="/posts/%EC%83%88%EB%A1%9C%EC%9A%B4-%ED%8F%AC%EC%8A%A4%ED%8A%B8/"
+      class="btn btn-outline-primary"
+      aria-label="Newer"
+    >
+      <p>오늘 처음 쓰는 포스팅</p>
+    </a>
   
 </nav>
 
             
               
               <!--  The comments switcher -->
+
+  
+  <!-- https://giscus.app/ -->
+<script type="text/javascript">
+  (function () {
+    const origin = 'https://giscus.app';
+    const iframe = 'iframe.giscus-frame';
+    const lightTheme = 'light';
+    const darkTheme = 'dark_dimmed';
+
+    let initTheme = lightTheme;
+    const html = document.documentElement;
+
+    if (
+      (html.hasAttribute('data-mode') &&
+        html.getAttribute('data-mode') === 'dark') ||
+      (!html.hasAttribute('data-mode') &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches)
+    ) {
+      initTheme = darkTheme;
+    }
+
+    let giscusAttributes = {
+      src: 'https://giscus.app/client.js',
+      'data-repo': 'rokwonkk/rokwonkk.github.io',
+      'data-repo-id': 'R_kgDOKzKBVw',
+      'data-category': 'General',
+      'data-category-id': 'DIC_kwDOKzKBV84CbXSh',
+      'data-mapping': 'url',
+      'data-reactions-enabled': '1',
+      'data-emit-metadata': '0',
+      'data-theme': initTheme,
+      'data-input-position': 'bottom',
+      'data-lang': 'ko',
+      'data-loading': 'lazy',
+      crossorigin: 'anonymous',
+      async: ''
+    };
+
+    let giscusScript = document.createElement('script');
+    Object.entries(giscusAttributes).forEach(([key, value]) =>
+      giscusScript.setAttribute(key, value)
+    );
+    document.getElementById('tail-wrapper').appendChild(giscusScript);
+
+    addEventListener('message', (event) => {
+      if (
+        event.source === window &&
+        event.data &&
+        event.data.direction === ModeToggle.ID
+      ) {
+        /* global theme mode changed */
+        const mode = event.data.message;
+        const theme = mode === ModeToggle.DARK_MODE ? darkTheme : lightTheme;
+
+        const message = {
+          setConfig: {
+            theme: theme
+          }
+        };
+
+        const giscus = document.querySelector(iframe).contentWindow;
+        giscus.postMessage({ giscus: message }, origin);
+      }
+    });
+  })();
+</script>
+
 
 
             
@@ -1350,17 +1470,6 @@ H4 - 제목
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
   
     
     
@@ -1370,20 +1479,6 @@ H4 - 제목
         
         
 
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
   
     
     
@@ -1405,7 +1500,26 @@ H4 - 제목
     
     
     
+  
+    
+    
+    
+    
       
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
     
   
     
@@ -1430,10 +1544,10 @@ H4 - 제목
     <div class="d-flex flex-wrap mt-3 mb-1 me-3">
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/favicon/">favicon</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/getting-started/">getting started</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/getting-started/">getting started</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/favicon/">favicon</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/typography/">typography</a>

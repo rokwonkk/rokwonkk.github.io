@@ -4,7 +4,6 @@ author: cotes
 date: 2023-11-26 13:35:00 +0800
 categories: [Blog, Tutorial]
 tags: [getting started]
-comments: true
 ---
 
 아 여기까지 오기도 정말 힘들었네요..
