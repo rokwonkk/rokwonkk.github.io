@@ -9,7 +9,7 @@ theme: jekyll-theme-chirpy
 lang: ko
 
 # Change to your timezone › https://kevinnovak.github.io/Time-Zone-Picker
-timezone: Asia/Shanghai
+timezone: Asia/Seoul
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
@@ -73,7 +73,7 @@ theme_mode: # [light|dark]
 img_cdn: "https://chirpy-img.netlify.app"
 
 # the avatar on sidebar, support local or CORS resources
-avatar: "asserts/img/rokwonkk.png"
+avatar: "/asserts/img/MyPicture.jpeg"
 
 # boolean type, the global switch for TOC in posts.
 toc: true
