@@ -6,7 +6,6 @@ categories: [Blogging, Tutorial]
 tags: [typography]
 math: true
 mermaid: true
-layout: default
 comments: true
 image:
   path: /commons/devices-mockup.png
