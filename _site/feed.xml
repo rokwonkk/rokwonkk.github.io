@@ -2,18 +2,18 @@
 
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://localhost:4000/</id>
-  <title>rokwonkky</title>
+  <title>rokwonkk</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2023-11-29T02:09:00+08:00</updated>
+  <updated>2023-11-29T11:31:12+09:00</updated>
   <author>
-    <name>your_full_name</name>
+    <name>로건리</name>
     <uri>http://localhost:4000/</uri>
   </author>
   <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml"/>
-  <link rel="alternate" type="text/html" hreflang="en"
+  <link rel="alternate" type="text/html" hreflang="ko"
     href="http://localhost:4000/"/>
   <generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator>
-  <rights> © 2023 your_full_name </rights>
+  <rights> © 2023 로건리 </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
