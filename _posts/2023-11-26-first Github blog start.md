@@ -1,14 +1,14 @@
 ---
-title: 우여곡절 끝에 GitHub blog 페이지 띄우기 성공!!
+title: 기본으로 생성되는 튜토리얼 번역으로 블로그를 시작해보자
 author: cotes
-date: 2023-11-29 13:35:00 +0800
+date: 2023-11-26 13:35:00 +0800
 categories: [Blogging, Tutorial]
 tags: [getting started]
 pin: true
 img_path: '/posts/20180809'
 ---
 
-아 여기까지 오기도 정말 힘들었네요.
+아 여기까지 오기도 정말 힘들었네요..
 
 ## 전제조건
 
