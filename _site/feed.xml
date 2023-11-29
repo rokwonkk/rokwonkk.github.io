@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>rokwonkk</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2023-11-29T20:19:07+09:00</updated>
+  <updated>2023-11-29T23:11:53+09:00</updated>
   <author>
     <name>로건리</name>
     <uri>http://localhost:4000/</uri>
@@ -68,7 +68,7 @@
     <link href="http://localhost:4000/posts/text-and-typography/" rel="alternate" type="text/html" title="텍스트 및 타이포그래피" />
     <published>2023-11-28T19:23:00+09:00</published>
   
-    <updated>2023-11-29T19:27:29+09:00</updated>
+    <updated>2023-11-29T21:38:55+09:00</updated>
   
     <id>http://localhost:4000/posts/text-and-typography/</id>
     <content src="http://localhost:4000/posts/text-and-typography/" />
