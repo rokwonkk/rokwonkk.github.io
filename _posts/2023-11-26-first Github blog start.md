@@ -1,5 +1,5 @@
 ---
-title: 기본으로 생성되는 튜토리얼 번역으로 블로그를 시작해보자
+title: 블로그를 시작해봅니다 
 author: cotes
 date: 2023-11-26 13:35:00 +0800
 categories: [Blog, Tutorial]
