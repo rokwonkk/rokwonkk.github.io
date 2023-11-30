@@ -4,6 +4,7 @@ author: cotes
 date: 2023-11-29 00:34:00 +0800
 categories: [Blog, Tutorial]
 tags: [favicon]
+published: false
 ---
 
 [**Chirpy**](https://github.com/cotes2020/jekyll-theme-chirpy/)의 [favicons](https://www.favicon-generator.org/about/)은 `assets/img/favicons/`{: .filepath}디렉토리에 위치합니다. 여러분은 여러분만의 이미지로 대체하고 싶을 것입니다. 다음 섹션에서는 기본 파비콘을 생성하고 대체하는 방법을 안내합니다.
