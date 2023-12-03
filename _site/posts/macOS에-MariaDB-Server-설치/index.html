@@ -50,7 +50,7 @@
 <meta name="twitter:site" content="@twitter_username" />
 <meta name="twitter:creator" content="@rokwonkk" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"rokwonkk","url":"https://github.com/rokwonkk/"},"dateModified":"2023-12-03T13:52:10+09:00","datePublished":"2023-12-03T13:52:10+09:00","description":"선행 작업 Hombrew 설치 1 /bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&quot;","headline":"MacOS에 MariaDB server 설치 해보자.","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/macOS%EC%97%90-MariaDB-Server-%EC%84%A4%EC%B9%98/"},"url":"http://localhost:4000/posts/macOS%EC%97%90-MariaDB-Server-%EC%84%A4%EC%B9%98/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"rokwonkk","url":"https://github.com/rokwonkk/"},"dateModified":"2023-12-03T15:10:17+09:00","datePublished":"2023-12-03T13:52:10+09:00","description":"선행 작업 Hombrew 설치 1 /bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&quot;","headline":"MacOS에 MariaDB server 설치 해보자.","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/macOS%EC%97%90-MariaDB-Server-%EC%84%A4%EC%B9%98/"},"url":"http://localhost:4000/posts/macOS%EC%97%90-MariaDB-Server-%EC%84%A4%EC%B9%98/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -695,6 +695,17 @@
 
       
     
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
 
     
   
@@ -753,6 +764,29 @@
 
       <!-- lastmod date -->
       
+        <span>
+          Updated
+          <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1701583817"
+  data-df="ll"
+  
+    data-bs-toggle="tooltip" data-bs-placement="bottom"
+  
+>
+  Dec  3, 2023
+</time>
+
+        </span>
+      
 
       
 
@@ -794,7 +828,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="109 words"
+  title="110 words"
 >
   <em>1 min</em> read</span>
 
@@ -806,38 +840,35 @@
 
   <div class="content">
     <h2 id="선행-작업"><span class="me-2">선행 작업</span><a href="#선행-작업" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-<blockquote>
-  <p>Hombrew 설치</p>
-  <div class="language-bash highlighter-rouge"><div class="code-header">
+<p>Hombrew 설치</p>
+<div class="language-bash highlighter-rouge"><div class="code-header">
         <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 </pre></td><td class="rouge-code"><pre>/bin/bash <span class="nt">-c</span> <span class="s2">"</span><span class="si">$(</span>curl <span class="nt">-fsSL</span> https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span class="si">)</span><span class="s2">"</span>
-</pre></td></tr></tbody></table></code></div>  </div>
-</blockquote>
+</pre></td></tr></tbody></table></code></div></div>
 
 <p>아 혹시 패스워드를 묻는다면 자기 맥OS의 패스워드를 입력 해줍니다.</p>
 
 <h2 id="homebrew로-mariadb-server-설치"><span class="me-2">Homebrew로 MariaDB server 설치</span><a href="#homebrew로-mariadb-server-설치" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-<blockquote>
-  <p>명령어를 터미널에 입력 해 줍시다.</p>
-  <div class="language-bash highlighter-rouge"><div class="code-header">
+<p>명령어를 터미널에 입력 해 줍시다.</p>
+<div class="language-bash highlighter-rouge"><div class="code-header">
         <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 </pre></td><td class="rouge-code"><pre>brew <span class="nb">install </span>mariadb
-</pre></td></tr></tbody></table></code></div>  </div>
-  <p>그럼 설치가 끝났습니다. 어떻습니까 정말 쉽죠?</p>
-</blockquote>
+</pre></td></tr></tbody></table></code></div></div>
+<p>그럼 설치가 끝났습니다. 어떻습니까 정말 쉽죠?</p>
 
 <h2 id="mariadb-실행"><span class="me-2">MariaDB 실행</span><a href="#mariadb-실행" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-<blockquote>
-  <p>명령어를 터미널에 입력 해 줍시다.</p>
-  <div class="language-bash highlighter-rouge"><div class="code-header">
+<p>명령어를 터미널에 입력 해 줍시다.</p>
+<div class="language-bash highlighter-rouge"><div class="code-header">
         <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 </pre></td><td class="rouge-code"><pre>mysql.server start
-</pre></td></tr></tbody></table></code></div>  </div>
-  <p><a href="https://chirpy-img.netlify.appasserts/img/mariadb.png" class="popup img-link  shimmer"><img src="https://chirpy-img.netlify.appasserts/img/mariadb.png" alt="Desktop View" width="700" height="400" loading="lazy"></a></p>
-</blockquote>
+</pre></td></tr></tbody></table></code></div></div>
+
+<p><a href="https://chirpy-img.netlify.app./20231203/mariadb.png" class="popup img-link  shimmer"><img src="https://chirpy-img.netlify.app./20231203/mariadb.png" alt="path" width="700" height="400" loading="lazy"></a></p>
+
+<h2 id="aa"><span class="me-2">aa</span><a href="#aa" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
   </div>
 
@@ -960,6 +991,13 @@
   <section id="access-lastmod">
     <h2 class="panel-heading">Recently Updated</h2>
     <ul class="content list-unstyled ps-0 pb-1 ms-1 mt-2">
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/macOS%EC%97%90-MariaDB-Server-%EC%84%A4%EC%B9%98/">MacOS에 MariaDB server 설치 해보자.</a>
+        </li>
       
         
         

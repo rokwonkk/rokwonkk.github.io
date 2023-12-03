@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>rokwonkk</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2023-12-03T15:08:10+09:00</updated>
+  <updated>2023-12-03T16:12:15+09:00</updated>
   <author>
     <name>로건리</name>
     <uri>http://localhost:4000/</uri>
@@ -24,7 +24,7 @@
     <link href="http://localhost:4000/posts/macOS%EC%97%90-MariaDB-Server-%EC%84%A4%EC%B9%98/" rel="alternate" type="text/html" title="MacOS에 MariaDB server 설치 해보자." />
     <published>2023-12-03T13:52:10+09:00</published>
   
-    <updated>2023-12-03T13:52:10+09:00</updated>
+    <updated>2023-12-03T15:10:17+09:00</updated>
   
     <id>http://localhost:4000/posts/macOS%EC%97%90-MariaDB-Server-%EC%84%A4%EC%B9%98/</id>
     <content src="http://localhost:4000/posts/macOS%EC%97%90-MariaDB-Server-%EC%84%A4%EC%B9%98/" />
@@ -49,29 +49,26 @@
 
 
       선행 작업
-
-  Hombrew 설치
-  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-  
+Hombrew 설치
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 
 아 혹시 패스워드를 묻는다면 자기 맥OS의 패스워드를 입력 해줍니다.
 
 Homebrew로 MariaDB server 설치
+명령어를 터미널에 입력 해 줍시다.
+brew install mariadb
 
-  명령어를 터미널에 입력 해 줍시다.
-  brew install mariadb
-  
-  그럼 설치가 끝났습니다. 어떻습니까 정말 쉽죠?
-
+그럼 설치가 끝났습니다. 어떻습니까 정말 쉽죠?
 
 MariaDB 실행
+명령어를 터미널에 입력 해 줍시다.
+mysql.server start
 
-  명령어를 터미널에 입력 해 줍시다.
-  mysql.server start
-  
-  
 
+
+
+aa
 
     </summary>
   
@@ -84,7 +81,7 @@ MariaDB 실행
     <link href="http://localhost:4000/posts/customize-the-favicon/" rel="alternate" type="text/html" title="Favicon 사용자 정의" />
     <published>2023-11-29T00:34:00+09:00</published>
   
-    <updated>2023-11-30T17:44:30+09:00</updated>
+    <updated>2023-12-03T15:08:49+09:00</updated>
   
     <id>http://localhost:4000/posts/customize-the-favicon/</id>
     <content src="http://localhost:4000/posts/customize-the-favicon/" />
@@ -128,7 +125,7 @@ MariaDB 실행
     <link href="http://localhost:4000/posts/text-and-typography/" rel="alternate" type="text/html" title="텍스트 및 타이포그래피" />
     <published>2023-11-28T11:33:00+09:00</published>
   
-    <updated>2023-11-30T17:44:30+09:00</updated>
+    <updated>2023-12-03T15:08:49+09:00</updated>
   
     <id>http://localhost:4000/posts/text-and-typography/</id>
     <content src="http://localhost:4000/posts/text-and-typography/" />
@@ -216,7 +213,7 @@ H4 - 제목
     <link href="http://localhost:4000/posts/%EC%83%88%EB%A1%9C%EC%9A%B4-%ED%8F%AC%EC%8A%A4%ED%8A%B8-%EC%9E%91%EC%84%B1%ED%95%98%EA%B8%B0/" rel="alternate" type="text/html" title="새로운 포스트 작성하기" />
     <published>2023-11-27T14:48:00+09:00</published>
   
-    <updated>2023-11-30T17:44:30+09:00</updated>
+    <updated>2023-12-03T15:08:49+09:00</updated>
   
     <id>http://localhost:4000/posts/%EC%83%88%EB%A1%9C%EC%9A%B4-%ED%8F%AC%EC%8A%A4%ED%8A%B8-%EC%9E%91%EC%84%B1%ED%95%98%EA%B8%B0/</id>
     <content src="http://localhost:4000/posts/%EC%83%88%EB%A1%9C%EC%9A%B4-%ED%8F%AC%EC%8A%A4%ED%8A%B8-%EC%9E%91%EC%84%B1%ED%95%98%EA%B8%B0/" />
@@ -265,7 +262,7 @@ date: YYYY-MM-DD HH:MM:...
     <link href="http://localhost:4000/posts/first-Github-blog-start/" rel="alternate" type="text/html" title="블로그를 시작해봅니다" />
     <published>2023-11-26T13:35:00+09:00</published>
   
-    <updated>2023-11-30T17:44:30+09:00</updated>
+    <updated>2023-12-03T15:08:49+09:00</updated>
   
     <id>http://localhost:4000/posts/first-Github-blog-start/</id>
     <content src="http://localhost:4000/posts/first-Github-blog-start/" />

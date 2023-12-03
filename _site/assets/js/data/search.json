@@ -13,8 +13,8 @@
 
 
     
-    "snippet": "선행 작업  Hombrew 설치  /bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\"  아 혹시 패스워드를 묻는다면 자기 맥OS의 패스워드를 입력 해줍니다.Homebrew로 MariaDB server 설치  명령어를 터미널에 입력 해...",
-    "content": "선행 작업  Hombrew 설치  /bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\"  아 혹시 패스워드를 묻는다면 자기 맥OS의 패스워드를 입력 해줍니다.Homebrew로 MariaDB server 설치  명령어를 터미널에 입력 해 줍시다.  brew install mariadb    그럼 설치가 끝났습니다. 어떻습니까 정말 쉽죠?MariaDB 실행  명령어를 터미널에 입력 해 줍시다.  mysql.server start    "
+    "snippet": "선행 작업Hombrew 설치/bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\"아 혹시 패스워드를 묻는다면 자기 맥OS의 패스워드를 입력 해줍니다.Homebrew로 MariaDB server 설치명령어를 터미널에 입력 해 줍시다.bre...",
+    "content": "선행 작업Hombrew 설치/bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\"아 혹시 패스워드를 묻는다면 자기 맥OS의 패스워드를 입력 해줍니다.Homebrew로 MariaDB server 설치명령어를 터미널에 입력 해 줍시다.brew install mariadb그럼 설치가 끝났습니다. 어떻습니까 정말 쉽죠?MariaDB 실행명령어를 터미널에 입력 해 줍시다.mysql.server startaa"
   },
   
   {
