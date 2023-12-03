@@ -39,8 +39,8 @@ SUCCESS! 가 보이면 실행이 됐다고 볼 수 있습니다. 정말 쉽죠?
 brew services start mariadb
 ```
 
-## root 계정 로그인
-root 계정으로 로그인 할때는 아래 명령어를 입력해줍니다.
+## root 계정 접속
+root 계정으로 접속 할때는 아래 명령어를 입력해줍니다.
 ```bash
 mysql -u root -p 
 ```
