@@ -1,8 +1,8 @@
 ---
 title: 블로그를 시작해봅니다 
 author: cotes
-date: 2023-11-26 13:35:00 +0800
-categories: [Blog, Tutorial]
+date: 2023-11-26 13:35:00 +0900
+categories: [Blog, Writing]
 tags: [getting started]
 img_path: '/posts/20180809'
 published: false

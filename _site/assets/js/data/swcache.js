@@ -30,6 +30,7 @@ const resource = [
     '/assets/img/favicons/favicon-16x16.png',
     '/assets/img/favicons/favicon-32x32.png',
     '/assets/img/favicons/favicon.ico',
+    '/assets/img/favicons/mariadb.png',
     '/assets/img/favicons/mstile-150x150.png',
     '/assets/img/favicons/profile-pic.png',
     '/assets/img/favicons/safari-pinned-tab.svg',
@@ -38,7 +39,8 @@ const resource = [
     '/assets/js/dist/home.min.js',
     '/assets/js/dist/misc.min.js',
     '/assets/js/dist/page.min.js',
-    '/assets/js/dist/post.min.js'
+    '/assets/js/dist/post.min.js',
+    '/assets/img/favicons/.DS_Store'
 ];
 
 /* The request url with below domain will be cached */

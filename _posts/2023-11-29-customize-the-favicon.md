@@ -1,8 +1,8 @@
 ---
 title: Favicon 사용자 정의
 author: cotes
-date: 2023-11-29 00:34:00 +0800
-categories: [Blog, Tutorial]
+date: 2023-11-29 00:34:00 +0900
+categories: [Blog, Writing]
 tags: [favicon]
 published: false
 ---

@@ -1,8 +1,8 @@
 ---
 title: 텍스트 및 타이포그래피
 author: cotes
-date: 2023-11-28 11:33:00 +0110
-categories: [Blog, Tutorial]
+date: 2023-11-28 11:33:00 +0900
+categories: [Blog, Writing]
 tags: [typography]
 math: true
 mermaid: true

@@ -35,25 +35,27 @@
   
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.2" />
-<meta property="og:title" content="Categories" />
+<meta property="og:title" content="MacOS에 MariaDB server 설치 해보자." />
+<meta name="author" content="rokwonkk" />
 <meta property="og:locale" content="ko" />
-<meta name="description" content="A minimal, responsive and feature-rich Jekyll theme for technical writing." />
-<meta property="og:description" content="A minimal, responsive and feature-rich Jekyll theme for technical writing." />
-<link rel="canonical" href="http://localhost:4000/categories/" />
-<meta property="og:url" content="http://localhost:4000/categories/" />
+<meta name="description" content="선행 작업 Hombrew 설치 1 /bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&quot;" />
+<meta property="og:description" content="선행 작업 Hombrew 설치 1 /bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&quot;" />
+<link rel="canonical" href="http://localhost:4000/posts/macOS%EC%97%90-MariaDB-Server-%EC%84%A4%EC%B9%98/" />
+<meta property="og:url" content="http://localhost:4000/posts/macOS%EC%97%90-MariaDB-Server-%EC%84%A4%EC%B9%98/" />
 <meta property="og:site_name" content="rokwonkk" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2023-12-03T15:08:10+09:00" />
+<meta property="article:published_time" content="2023-12-03T13:52:10+09:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Categories" />
+<meta property="twitter:title" content="MacOS에 MariaDB server 설치 해보자." />
 <meta name="twitter:site" content="@twitter_username" />
+<meta name="twitter:creator" content="@rokwonkk" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-12-03T15:08:10+09:00","datePublished":"2023-12-03T15:08:10+09:00","description":"A minimal, responsive and feature-rich Jekyll theme for technical writing.","headline":"Categories","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/categories/"},"url":"http://localhost:4000/categories/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"rokwonkk","url":"https://github.com/rokwonkk/"},"dateModified":"2023-12-03T13:52:10+09:00","datePublished":"2023-12-03T13:52:10+09:00","description":"선행 작업 Hombrew 설치 1 /bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&quot;","headline":"MacOS에 MariaDB server 설치 해보자.","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/macOS%EC%97%90-MariaDB-Server-%EC%84%A4%EC%B9%98/"},"url":"http://localhost:4000/posts/macOS%EC%97%90-MariaDB-Server-%EC%84%A4%EC%B9%98/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
 
-  <title>Categories | rokwonkk
+  <title>MacOS에 MariaDB server 설치 해보자. | rokwonkk
   </title>
 
   <!--
@@ -105,9 +107,16 @@
   <link rel="stylesheet" href="/assets/css/jekyll-theme-chirpy.css">
 
   
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.21.3/dist/tocbot.min.css">
   
 
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.min.css">
+  
+
+  
+    <!-- Manific Popup -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/magnific-popup.min.css">
   
 
   <!-- JavaScript -->
@@ -298,7 +307,7 @@
       </li>
       <!-- the real tabs -->
       
-        <li class="nav-item active">
+        <li class="nav-item">
           <a href="/categories/" class="nav-link">
             <i class="fa-fw fas fa-stream"></i>
             
@@ -465,8 +474,10 @@
           
         
           
+        
+          
             
-              <span>Categories</span>
+              <span>MacOS에 MariaDB server 설치 해보자.</span>
             
 
           
@@ -480,7 +491,7 @@
     </button>
 
     <div id="topbar-title">
-      Categories
+      Post
     </div>
 
     <button type="button" id="search-trigger" class="btn btn-link">
@@ -506,220 +517,424 @@
         <div class="row flex-grow-1">
           <main aria-label="Main Content" class="col-12 col-lg-11 col-xl-9 px-md-4">
             
-              
+              <!-- Refactor the HTML structure -->
+
+
+
+<!--
+  In order to allow a wide table to scroll horizontally,
+  we suround the markdown table with `<div class="table-wrapper">` and `</div>`
+-->
+
+
+
+<!--
+  Fixed kramdown code highlight rendering:
+  https://github.com/penibelst/jekyll-compress-html/issues/101
+  https://github.com/penibelst/jekyll-compress-html/issues/71#issuecomment-188144901
+-->
+
+
+
+<!-- Change the icon of checkbox -->
+
+
+
+<!-- Handle images -->
+
+
+
+
+  
+  
+
+  <!-- CDN URL -->
+  
+
+  <!-- Add image path -->
+  
+
+  
+    
+      
+      
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+
+  
+
+
+<!-- Add header for code snippets -->
+
+
+
+<!-- Create heading anchors -->
+
+
+
+
+
+  
+  
+
+  
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+
+    
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+<!-- return -->
+
 
 
 
 <article class="px-1">
+  <header>
+    <h1 data-toc-skip>MacOS에 MariaDB server 설치 해보자.</h1>
+
+    <div class="post-meta text-muted">
+      <!-- published date -->
+      <span>
+        Posted
+        <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
   
-    
-    
-    <h1 class="dynamic-title">
-      Categories
-    </h1>
-    <div class="content">
+  data-ts="1701579130"
+  data-df="ll"
+  
+    data-bs-toggle="tooltip" data-bs-placement="bottom"
+  
+>
+  Dec  3, 2023
+</time>
+
+      </span>
+
+      <!-- lastmod date -->
       
 
+      
 
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-    
-
-    
-
-    
-    
-
-    <div class="card categories">
-      <!-- top-category -->
-      <div
-        id="h_0"
-        class="card-header d-flex justify-content-between hide-border-bottom"
-      >
-        <span class="ms-2">
-          <i class="far fa-folder-open fa-fw"></i>
-
+      <div class="d-flex justify-content-between">
+        <!-- author(s) -->
+        <span>
           
-          <a href="/categories/blog/" class="mx-2">Blog</a>
 
-          <!-- content count -->
-          
-          <span class="text-muted small font-weight-light">
+          By
+
+          <em>
             
-              1
               
-                category
-              ,
+                <a href="https://github.com/rokwonkk/">rokwonkk</a>
+                
+              
             
-
-            4
-
-            
-              posts
-            
-          </span>
+          </em>
         </span>
 
-        <!-- arrow -->
+        <!-- read time -->
+        <!-- Calculate the post's reading time, and display the word count in tooltip -->
+
+
+
+<!-- words per minute -->
+
+
+
+
+
+
+
+
+
+
+<!-- return element -->
+<span
+  class="readtime"
+  data-bs-toggle="tooltip"
+  data-bs-placement="bottom"
+  title="109 words"
+>
+  <em>1 min</em> read</span>
+
+      </div>
+      <!-- .d-flex -->
+    </div>
+    <!-- .post-meta -->
+  </header>
+
+  <div class="content">
+    <h2 id="선행-작업"><span class="me-2">선행 작업</span><a href="#선행-작업" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<blockquote>
+  <p>Hombrew 설치</p>
+  <div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>/bin/bash <span class="nt">-c</span> <span class="s2">"</span><span class="si">$(</span>curl <span class="nt">-fsSL</span> https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span class="si">)</span><span class="s2">"</span>
+</pre></td></tr></tbody></table></code></div>  </div>
+</blockquote>
+
+<p>아 혹시 패스워드를 묻는다면 자기 맥OS의 패스워드를 입력 해줍니다.</p>
+
+<h2 id="homebrew로-mariadb-server-설치"><span class="me-2">Homebrew로 MariaDB server 설치</span><a href="#homebrew로-mariadb-server-설치" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<blockquote>
+  <p>명령어를 터미널에 입력 해 줍시다.</p>
+  <div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>brew <span class="nb">install </span>mariadb
+</pre></td></tr></tbody></table></code></div>  </div>
+  <p>그럼 설치가 끝났습니다. 어떻습니까 정말 쉽죠?</p>
+</blockquote>
+
+<h2 id="mariadb-실행"><span class="me-2">MariaDB 실행</span><a href="#mariadb-실행" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<blockquote>
+  <p>명령어를 터미널에 입력 해 줍시다.</p>
+  <div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>mysql.server start
+</pre></td></tr></tbody></table></code></div>  </div>
+  <p><a href="https://chirpy-img.netlify.appasserts/img/mariadb.png" class="popup img-link  shimmer"><img src="https://chirpy-img.netlify.appasserts/img/mariadb.png" alt="Desktop View" width="700" height="400" loading="lazy"></a></p>
+</blockquote>
+
+  </div>
+
+  <div class="post-tail-wrapper text-muted">
+    <!-- categories -->
+    
+      <div class="post-meta mb-3">
+        <i class="far fa-folder-open fa-fw me-1"></i>
+        
+          <a href="/categories/macos/">macOS</a>,
+          <a href="/categories/db/">DB</a>
+      </div>
+    
+
+    <!-- tags -->
+    
+      <div class="post-tags">
+        <i class="fa fa-tags fa-fw me-1"></i>
         
           <a
-            href="#l_0"
-            data-bs-toggle="collapse"
-            aria-expanded="true"
-            aria-label="h_0-trigger"
-            class="category-trigger hide-border-bottom"
-          >
-            <i class="fas fa-fw fa-angle-down"></i>
-          </a>
+            href="/tags/setting/"
+            class="post-tag no-text-decoration"
+          >setting</a>
         
       </div>
-      <!-- .card-header -->
-
-      <!-- Sub-categories -->
-      
-        <div id="l_0" class="collapse show" aria-expanded="true">
-          <ul class="list-group">
-            
-              <li class="list-group-item">
-                <i class="far fa-folder fa-fw"></i>
-
-                
-                <a href="/categories/writing/" class="mx-2">Writing</a>
-
-                
-                <span class="text-muted small font-weight-light">
-                  4
-
-                  
-                    posts
-                  
-                </span>
-              </li>
-            
-          </ul>
-        </div>
-      
-    </div>
-    <!-- .card -->
-
-    
-  
-
-  
-  
-  
-
-  
-
-  
-  
-  
-
-  
-
-  
-  
-  
-
-  
     
 
-    
-
-    
-    
-
-    <div class="card categories">
-      <!-- top-category -->
-      <div
-        id="h_1"
-        class="card-header d-flex justify-content-between hide-border-bottom"
-      >
-        <span class="ms-2">
-          <i class="far fa-folder-open fa-fw"></i>
-
-          
-          <a href="/categories/macos/" class="mx-2">macOS</a>
-
-          <!-- content count -->
-          
-          <span class="text-muted small font-weight-light">
-            
-              1
-              
-                category
-              ,
-            
-
-            1
-
-            
-              post
-            
-          </span>
-        </span>
-
-        <!-- arrow -->
+    <div
+      class="
+        post-tail-bottom
+        d-flex justify-content-between align-items-center mt-5 pb-2
+      "
+    >
+      <div class="license-wrapper">
         
-          <a
-            href="#l_1"
-            data-bs-toggle="collapse"
-            aria-expanded="true"
-            aria-label="h_1-trigger"
-            class="category-trigger hide-border-bottom"
-          >
-            <i class="fas fa-fw fa-angle-down"></i>
-          </a>
+          
+
+          This post is licensed under 
+        <a href="https://creativecommons.org/licenses/by/4.0/">
+          CC BY 4.0
+        </a>
+         by the author.
         
       </div>
-      <!-- .card-header -->
 
-      <!-- Sub-categories -->
-      
-        <div id="l_1" class="collapse show" aria-expanded="true">
-          <ul class="list-group">
-            
-              <li class="list-group-item">
-                <i class="far fa-folder fa-fw"></i>
+      <!-- Post sharing snippet -->
 
-                
-                <a href="/categories/db/" class="mx-2">DB</a>
-
-                
-                <span class="text-muted small font-weight-light">
-                  1
-
-                  
-                    post
-                  
-                </span>
-              </li>
-            
-          </ul>
-        </div>
-      
-    </div>
-    <!-- .card -->
+<div class="share-wrapper d-flex align-items-center">
+  <span class="share-label text-muted">Share</span>
+  <span class="share-icons">
+    
+    
+    
 
     
-  
 
+      
+
+      <a href="https://twitter.com/intent/tweet?text=MacOS%EC%97%90%20MariaDB%20server%20%EC%84%A4%EC%B9%98%20%ED%95%B4%EB%B3%B4%EC%9E%90.%20-%20rokwonkk&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FmacOS%25EC%2597%2590-MariaDB-Server-%25EC%2584%25A4%25EC%25B9%2598%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+        <i class="fa-fw fa-brands fa-square-x-twitter"></i>
+      </a>
+    
+
+      
+
+      <a href="https://www.facebook.com/sharer/sharer.php?title=MacOS%EC%97%90%20MariaDB%20server%20%EC%84%A4%EC%B9%98%20%ED%95%B4%EB%B3%B4%EC%9E%90.%20-%20rokwonkk&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FmacOS%25EC%2597%2590-MariaDB-Server-%25EC%2584%25A4%25EC%25B9%2598%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+        <i class="fa-fw fab fa-facebook-square"></i>
+      </a>
+    
+
+      
+
+      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FmacOS%25EC%2597%2590-MariaDB-Server-%25EC%2584%25A4%25EC%25B9%2598%2F&text=MacOS%EC%97%90%20MariaDB%20server%20%EC%84%A4%EC%B9%98%20%ED%95%B4%EB%B3%B4%EC%9E%90.%20-%20rokwonkk" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
+        <i class="fa-fw fab fa-telegram"></i>
+      </a>
+    
+
+    <button
+      id="copy-link"
+      aria-label="Copy link"
+      class="btn small"
+      data-bs-toggle="tooltip"
+      data-bs-placement="top"
+      title="Copy link"
+      data-title-succeed="Link copied successfully!"
+    >
+      <i class="fa-fw fas fa-link pe-none fs-6"></i>
+    </button>
+  </span>
+</div>
 
     </div>
-  
+    <!-- .post-tail-bottom -->
+  </div>
+  <!-- div.post-tail-wrapper -->
 </article>
+
 
             
           </main>
@@ -938,12 +1153,162 @@
             </div>
 
             
+              
+              
+
+
+
+  <section id="toc-wrapper" class="ps-0 pe-4">
+    <h2 class="panel-heading ps-3 pt-2 mb-2">Contents</h2>
+    <nav id="toc"></nav>
+  </section>
+
+
+            
           </aside>
         </div>
 
         <div class="row">
           <!-- tail -->
           <div id="tail-wrapper" class="col-12 col-lg-11 col-xl-9 px-md-4">
+            
+              
+              <!-- Recommend the other 3 posts according to the tags and categories of the current post. -->
+
+<!-- The total size of related posts -->
+
+
+<!-- An random integer that bigger than 0 -->
+
+
+<!-- Equals to TAG_SCORE / {max_categories_hierarchy} -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+            
+              
+              <!-- Navigation buttons at the bottom of the post. -->
+
+<nav class="post-navigation d-flex justify-content-between" aria-label="Post Navigation">
+  
+  
+
+  
+    <a
+      href="/posts/customize-the-favicon/"
+      class="btn btn-outline-primary"
+      aria-label="Older"
+    >
+      <p>Favicon 사용자 정의</p>
+    </a>
+  
+
+  
+    <div class="btn btn-outline-primary disabled" aria-label="Newer">
+      <p>-</p>
+    </div>
+  
+</nav>
+
+            
+              
+              <!--  The comments switcher -->
+
+  
+  <!-- https://giscus.app/ -->
+<script type="text/javascript">
+  (function () {
+    const origin = 'https://giscus.app';
+    const iframe = 'iframe.giscus-frame';
+    const lightTheme = 'light';
+    const darkTheme = 'dark_dimmed';
+
+    let initTheme = lightTheme;
+    const html = document.documentElement;
+
+    if (
+      (html.hasAttribute('data-mode') &&
+        html.getAttribute('data-mode') === 'dark') ||
+      (!html.hasAttribute('data-mode') &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches)
+    ) {
+      initTheme = darkTheme;
+    }
+
+    let giscusAttributes = {
+      src: 'https://giscus.app/client.js',
+      'data-repo': 'rokwonkk/rokwonkk.github.io',
+      'data-repo-id': 'R_kgDOKzKBVw',
+      'data-category': 'General',
+      'data-category-id': 'DIC_kwDOKzKBV84CbXSh',
+      'data-mapping': 'url',
+      'data-reactions-enabled': '1',
+      'data-emit-metadata': '0',
+      'data-theme': initTheme,
+      'data-input-position': 'bottom',
+      'data-lang': 'ko',
+      'data-loading': 'lazy',
+      crossorigin: 'anonymous',
+      async: ''
+    };
+
+    let giscusScript = document.createElement('script');
+    Object.entries(giscusAttributes).forEach(([key, value]) =>
+      giscusScript.setAttribute(key, value)
+    );
+    document.getElementById('tail-wrapper').appendChild(giscusScript);
+
+    addEventListener('message', (event) => {
+      if (
+        event.source === window &&
+        event.data &&
+        event.data.direction === ModeToggle.ID
+      ) {
+        /* global theme mode changed */
+        const mode = event.data.message;
+        const theme = mode === ModeToggle.DARK_MODE ? darkTheme : lightTheme;
+
+        const message = {
+          setConfig: {
+            theme: theme
+          }
+        };
+
+        const giscus = document.querySelector(iframe).contentWindow;
+        giscus.postMessage({ giscus: message }, origin);
+      }
+    });
+  })();
+</script>
+
+
+
             
 
             <!-- The Footer -->
@@ -1191,6 +1556,13 @@
 <!-- layout specified -->
 
 
+  
+
+  
+    <!-- image lazy-loading & popup & clipboard -->
+    
+  
+
 
 
 
@@ -1226,16 +1598,72 @@
 
   
 
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
 
 
-  <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.7.1/dist/jquery.min.js,npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js,npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.7.1/dist/jquery.min.js,npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js,npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.umd.min.js,npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/dayjs@1.11.10/dayjs.min.js,npm/dayjs@1.11.10/locale/ko.min.js,npm/dayjs@1.11.10/plugin/relativeTime.min.js,npm/dayjs@1.11.10/plugin/localizedFormat.min.js,npm/tocbot@4.21.3/dist/tocbot.min.js"></script>
 
 
 
 
 
 
-<script defer src="/assets/js/dist/categories.min.js"></script>
+<script defer src="/assets/js/dist/post.min.js"></script>
 
 
 
