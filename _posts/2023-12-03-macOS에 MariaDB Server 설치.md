@@ -4,7 +4,7 @@ author: cotes
 date: 2023-12-03 13:52:10 +0900
 categories: [macOS, DB]
 tags: [setting]
-published: true
+published: false
 ---
 
 ## 선행 작업
