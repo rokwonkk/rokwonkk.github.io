@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>rokwonkk</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2023-12-03T16:12:15+09:00</updated>
+  <updated>2023-12-03T17:31:25+09:00</updated>
   <author>
     <name>로건리</name>
     <uri>http://localhost:4000/</uri>
@@ -24,7 +24,7 @@
     <link href="http://localhost:4000/posts/macOS%EC%97%90-MariaDB-Server-%EC%84%A4%EC%B9%98/" rel="alternate" type="text/html" title="MacOS에 MariaDB server 설치 해보자." />
     <published>2023-12-03T13:52:10+09:00</published>
   
-    <updated>2023-12-03T15:10:17+09:00</updated>
+    <updated>2023-12-03T16:14:01+09:00</updated>
   
     <id>http://localhost:4000/posts/macOS%EC%97%90-MariaDB-Server-%EC%84%A4%EC%B9%98/</id>
     <content src="http://localhost:4000/posts/macOS%EC%97%90-MariaDB-Server-%EC%84%A4%EC%B9%98/" />
@@ -59,17 +59,21 @@ Homebrew로 MariaDB server 설치
 명령어를 터미널에 입력 해 줍시다.
 brew install mariadb
 
-그럼 설치가 끝났습니다. 어떻습니까 정말 쉽죠?
+그럼 설치가 끝났습니다. 정말 쉽죠?
 
 MariaDB 실행
-명령어를 터미널에 입력 해 줍시다.
+명령어를 터미널에 입력해 줍시다.
 mysql.server start
 
 
 
 
-aa
+SUCCESS! 가 보이면 실행이 됐다고 볼 수 있습니다. 정말 쉽죠?
 
+자동 실행
+자동 실행은 brew를 이용해서 해야합니다.
+아래의 명령어를 입력해 줍니다.
+brew se...
     </summary>
   
 

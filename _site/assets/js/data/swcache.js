@@ -35,6 +35,7 @@ const resource = [
     '/assets/img/favicons/mstile-150x150.png',
     '/assets/img/favicons/profile-pic.png',
     '/assets/img/favicons/safari-pinned-tab.svg',
+    '/assets/img/mariadb.png',
     '/assets/js/dist/categories.min.js',
     '/assets/js/dist/commons.min.js',
     '/assets/js/dist/home.min.js',
