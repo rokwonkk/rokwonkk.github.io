@@ -23,7 +23,6 @@ const resource = [
   /* --- Favicons & compressed JS --- */
   
   
-    '/assets/img/20231203/mariadb.jpg',
     '/assets/img/favicons/MyPicture.jpeg',
     '/assets/img/favicons/android-chrome-192x192.png',
     '/assets/img/favicons/android-chrome-512x512.png',
@@ -35,7 +34,6 @@ const resource = [
     '/assets/img/favicons/mstile-150x150.png',
     '/assets/img/favicons/profile-pic.png',
     '/assets/img/favicons/safari-pinned-tab.svg',
-    '/assets/img/mariadb.png',
     '/assets/js/dist/categories.min.js',
     '/assets/js/dist/commons.min.js',
     '/assets/js/dist/home.min.js',

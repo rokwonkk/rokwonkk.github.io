@@ -50,7 +50,7 @@
 <meta name="twitter:site" content="@twitter_username" />
 <meta name="twitter:creator" content="@rokwonkk" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"rokwonkk","url":"https://github.com/rokwonkk/"},"dateModified":"2023-12-03T16:14:01+09:00","datePublished":"2023-12-03T13:52:10+09:00","description":"선행 작업 Hombrew 설치 1 /bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&quot;","headline":"MacOS에 MariaDB server 설치 해보자.","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/macOS%EC%97%90-MariaDB-Server-%EC%84%A4%EC%B9%98/"},"url":"http://localhost:4000/posts/macOS%EC%97%90-MariaDB-Server-%EC%84%A4%EC%B9%98/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"rokwonkk","url":"https://github.com/rokwonkk/"},"dateModified":"2023-12-05T20:01:41+09:00","datePublished":"2023-12-03T13:52:10+09:00","description":"선행 작업 Hombrew 설치 1 /bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&quot;","headline":"MacOS에 MariaDB server 설치 해보자.","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/macOS%EC%97%90-MariaDB-Server-%EC%84%A4%EC%B9%98/"},"url":"http://localhost:4000/posts/macOS%EC%97%90-MariaDB-Server-%EC%84%A4%EC%B9%98/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -908,13 +908,13 @@
 
 <time
   
-  data-ts="1701587641"
+  data-ts="1701774101"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Dec  3, 2023
+  Dec  5, 2023
 </time>
 
         </span>
@@ -960,7 +960,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="430 words"
+  title="419 words"
 >
   <em>2 min</em> read</span>
 
@@ -979,19 +979,19 @@
 </pre></td><td class="rouge-code"><pre>/bin/bash <span class="nt">-c</span> <span class="s2">"</span><span class="si">$(</span>curl <span class="nt">-fsSL</span> https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span class="si">)</span><span class="s2">"</span>
 </pre></td></tr></tbody></table></code></div></div>
 
-<p>아 혹시 패스워드를 묻는다면 자기 맥OS의 패스워드를 입력 해줍니다.</p>
+<p>아 혹시 패스워드를 묻는다면 자기 맥OS의 패스워드를 입력 해준다.</p>
 
 <h2 id="homebrew로-mariadb-server-설치"><span class="me-2">Homebrew로 MariaDB server 설치</span><a href="#homebrew로-mariadb-server-설치" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-<p>명령어를 터미널에 입력 해 줍시다.</p>
+<p>명령어를 터미널에 입력 해본다</p>
 <div class="language-bash highlighter-rouge"><div class="code-header">
         <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 </pre></td><td class="rouge-code"><pre>brew <span class="nb">install </span>mariadb
 </pre></td></tr></tbody></table></code></div></div>
-<p>그럼 설치가 끝났습니다. 정말 쉽죠?</p>
+<p>그럼 설치가 끝났다. 정말 쉽다.</p>
 
 <h2 id="mariadb-실행"><span class="me-2">MariaDB 실행</span><a href="#mariadb-실행" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-<p>명령어를 터미널에 입력해 줍시다.</p>
+<p>명령어를 터미널에 입력해 준다.</p>
 <div class="language-bash highlighter-rouge"><div class="code-header">
         <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
@@ -1000,7 +1000,7 @@
 
 <p><a href="https://github.com/rokwonkk/rokwonkk.github.io/assets/117067171/63ecc38b-303f-4b03-8562-aa10d8e09283" class="popup img-link  shimmer"><img src="https://github.com/rokwonkk/rokwonkk.github.io/assets/117067171/63ecc38b-303f-4b03-8562-aa10d8e09283" alt="mariadb" loading="lazy"></a></p>
 
-<p>SUCCESS! 가 보이면 실행이 됐다고 볼 수 있습니다. 정말 쉽죠?</p>
+<p>SUCCESS! 가 보이면 실행이 됐다고 볼 수 있다. 어렵지 않다.</p>
 
 <h2 id="자동-실행"><span class="me-2">자동 실행</span><a href="#자동-실행" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <p>자동 실행은 brew를 이용해서 해야합니다.
@@ -1011,8 +1011,8 @@
 </pre></td><td class="rouge-code"><pre>brew services start mariadb
 </pre></td></tr></tbody></table></code></div></div>
 
-<h2 id="root-계정-로그인"><span class="me-2">root 계정 로그인</span><a href="#root-계정-로그인" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-<p>root 계정으로 로그인 할때는 아래 명령어를 입력해줍니다.</p>
+<h2 id="root-계정-접속"><span class="me-2">root 계정 접속</span><a href="#root-계정-접속" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>root 계정으로 접속 할때는 아래 명령어를 입력해준다.</p>
 <div class="language-bash highlighter-rouge"><div class="code-header">
         <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
@@ -1045,11 +1045,12 @@
 <p>정상적으로 Password에 암호화가 되서 들어가 있는 것을 볼 수 있다.</p>
 
 <p><a href="https://github.com/rokwonkk/rokwonkk.github.io/assets/117067171/878dc583-f326-4ae8-8f74-6a15dcd09e84" class="popup img-link  shimmer"><img src="https://github.com/rokwonkk/rokwonkk.github.io/assets/117067171/878dc583-f326-4ae8-8f74-6a15dcd09e84" alt="mariadb" loading="lazy"></a>
-마지막으로 툴에서 접속 Test까지 하면 끝이 납니다.</p>
+마지막으로 툴에서 접속 Test까지 하면 끝이 난다.</p>
 
-<p>첫 포스팅이라서 많이 부족한 부분도 많고, 워터마크도 처음 사용하고해서 다사다난 하지만</p>
+<p>첫 포스팅이라서 많이 부족한 부분도 많고, 
+마크다운 문법도 처음 사용하고해서 다사다난 하지만</p>
 
-<p>자주 사용해보고 친해져서 갈수록 깔끔하며 정리된 모습을 보이도록 하겠습니다.</p>
+<p>자주 사용해보고 친해져서 갈수록 깔끔하며 나아진 모습을 보이도록 하겠다.</p>
 
   </div>
 
@@ -1180,34 +1181,6 @@
           <a href="/posts/macOS%EC%97%90-MariaDB-Server-%EC%84%A4%EC%B9%98/">MacOS에 MariaDB server 설치 해보자.</a>
         </li>
       
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/first-Github-blog-start/">블로그를 시작해봅니다</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/%EC%83%88%EB%A1%9C%EC%9A%B4-%ED%8F%AC%EC%8A%A4%ED%8A%B8-%EC%9E%91%EC%84%B1%ED%95%98%EA%B8%B0/">새로운 포스트 작성하기</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/text-and-typography/">텍스트 및 타이포그래피</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/customize-the-favicon/">Favicon 사용자 정의</a>
-        </li>
-      
     </ul>
   </section>
   <!-- #access-lastmod -->
@@ -1234,17 +1207,6 @@
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
   
     
     
@@ -1254,20 +1216,6 @@
         
         
 
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
   
     
     
@@ -1289,15 +1237,6 @@
     
     
     
-      
-    
-  
-    
-    
-    
-    
-      
-    
   
     
     
@@ -1318,15 +1257,6 @@
     
     
     
-    
-      
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -1351,19 +1281,16 @@
     <div class="d-flex flex-wrap mt-3 mb-1 me-3">
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/favicon/">favicon</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/getting-started/">getting started</a>
-      
-        
         <a class="post-tag btn btn-outline-primary" href="/tags/setting/">setting</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/typography/">typography</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/linux/">linux</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/writing/">writing</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/ubuntu/">ubuntu</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/%EA%B0%80%EC%83%81%ED%99%94/">가상화</a>
       
     </div>
   </section>
@@ -1419,6 +1346,17 @@
 
   
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
 
 
@@ -1428,6 +1366,53 @@
 
 
 
+
+
+  <aside id="related-posts" aria-labelledby="related-label">
+    <h3 class="mb-4" id="related-label">Further Reading</h3>
+    <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
+      
+        <article class="col">
+          <a href="/posts/%EC%A2%8C%EC%B6%A9%EC%9A%B0%EB%8F%8C-%EA%B0%80%EC%83%81%ED%99%94%EC%84%9C%EB%B2%84%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-DDNS%EC%A0%81%EC%9A%A9-%EB%B0%8F-%EC%99%B8%EB%B6%80-%EC%A0%91%EC%86%8D-%EC%84%A4%EC%A0%95(feat.-%EC%9A%B0%EB%B6%84%ED%88%AC,-sk%EA%B3%B5%EC%9C%A0%EA%B8%B0)/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1704003910"
+  data-df="ll"
+  
+>
+  Dec 31, 2023
+</time>
+
+              <h4 class="pt-0 my-2">좌충우돌 가상화서버를 이용한 DDNS적용 및 외부 접속 설정(feat. 우분투, sk공유기)</h4>
+              <div class="text-muted">
+                <p>
+                  
+
+
+
+
+
+                  먼저 SK공유기 설정부터 DDNS 설정으로 외부에서 접속을 어찌저찌 끝에 성공을 하여 까먹기 전에 후다닥 정리를 해서 기록해놓을 겸 작성을 하게 되었다.
+
+먼저 집에는 데스크탑 한 대와 맥북을 사용하고 있고, 데스크탑에 리눅스 환경을 만들어서 도커나 쿠버네티스 등 여러 세팅 테스트를 해보려고 생각을 했다. 근데 윈도우도 필요해서(가끔은 게임도 해야할거...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+    </nav>
+  </aside>
+  <!-- #related-posts -->
 
 
             
@@ -1439,19 +1424,19 @@
   
 
   
-    <a
-      href="/posts/customize-the-favicon/"
-      class="btn btn-outline-primary"
-      aria-label="Older"
-    >
-      <p>Favicon 사용자 정의</p>
-    </a>
+    <div class="btn btn-outline-primary disabled" aria-label="Older">
+      <p>-</p>
+    </div>
   
 
   
-    <div class="btn btn-outline-primary disabled" aria-label="Newer">
-      <p>-</p>
-    </div>
+    <a
+      href="/posts/%EC%A2%8C%EC%B6%A9%EC%9A%B0%EB%8F%8C-%EA%B0%80%EC%83%81%ED%99%94%EC%84%9C%EB%B2%84%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-DDNS%EC%A0%81%EC%9A%A9-%EB%B0%8F-%EC%99%B8%EB%B6%80-%EC%A0%91%EC%86%8D-%EC%84%A4%EC%A0%95(feat.-%EC%9A%B0%EB%B6%84%ED%88%AC,-sk%EA%B3%B5%EC%9C%A0%EA%B8%B0)/"
+      class="btn btn-outline-primary"
+      aria-label="Newer"
+    >
+      <p>좌충우돌 가상화서버를 이용한 DDNS적용 및 외부 접속 설정(feat. 우분투, sk공유기)</p>
+    </a>
   
 </nav>
 
@@ -1585,17 +1570,6 @@
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
   
     
     
@@ -1605,20 +1579,6 @@
         
         
 
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
   
     
     
@@ -1640,15 +1600,6 @@
     
     
     
-      
-    
-  
-    
-    
-    
-    
-      
-    
   
     
     
@@ -1669,15 +1620,6 @@
     
     
     
-    
-      
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -1702,19 +1644,16 @@
     <div class="d-flex flex-wrap mt-3 mb-1 me-3">
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/favicon/">favicon</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/getting-started/">getting started</a>
-      
-        
         <a class="post-tag btn btn-outline-primary" href="/tags/setting/">setting</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/typography/">typography</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/linux/">linux</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/writing/">writing</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/ubuntu/">ubuntu</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/%EA%B0%80%EC%83%81%ED%99%94/">가상화</a>
       
     </div>
   </section>
