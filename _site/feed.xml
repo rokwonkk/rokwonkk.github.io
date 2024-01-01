@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>rokwonkk</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2023-12-31T21:07:35+09:00</updated>
+  <updated>2024-01-01T20:28:08+09:00</updated>
   <author>
     <name>로건리</name>
     <uri>http://localhost:4000/</uri>
@@ -13,10 +13,62 @@
   <link rel="alternate" type="text/html" hreflang="ko"
     href="http://localhost:4000/"/>
   <generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator>
-  <rights> © 2023 로건리 </rights>
+  <rights> © 2024 로건리 </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>좌충우돌 가상화서버를 이용한 DDNS적용 및 외부 접속 설정(feat. 우분투, sk공유기)</title>
+    <link href="http://localhost:4000/posts/%EC%A2%8C%EC%B6%A9%EC%9A%B0%EB%8F%8C-%EA%B0%80%EC%83%81%ED%99%94%EC%84%9C%EB%B2%84%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-DDNS%EC%A0%81%EC%9A%A9-%EB%B0%8F-%EC%99%B8%EB%B6%80-%EC%A0%91%EC%86%8D-%EC%84%A4%EC%A0%95(feat.-%EC%9A%B0%EB%B6%84%ED%88%AC,-sk%EA%B3%B5%EC%9C%A0%EA%B8%B0)-2/" rel="alternate" type="text/html" title="좌충우돌 가상화서버를 이용한 DDNS적용 및 외부 접속 설정(feat. 우분투, sk공유기)" />
+    <published>2024-01-01T16:26:00+09:00</published>
+  
+    <updated>2024-01-01T16:26:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/%EC%A2%8C%EC%B6%A9%EC%9A%B0%EB%8F%8C-%EA%B0%80%EC%83%81%ED%99%94%EC%84%9C%EB%B2%84%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-DDNS%EC%A0%81%EC%9A%A9-%EB%B0%8F-%EC%99%B8%EB%B6%80-%EC%A0%91%EC%86%8D-%EC%84%A4%EC%A0%95(feat.-%EC%9A%B0%EB%B6%84%ED%88%AC,-sk%EA%B3%B5%EC%9C%A0%EA%B8%B0)-2/</id>
+    <content src="http://localhost:4000/posts/%EC%A2%8C%EC%B6%A9%EC%9A%B0%EB%8F%8C-%EA%B0%80%EC%83%81%ED%99%94%EC%84%9C%EB%B2%84%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-DDNS%EC%A0%81%EC%9A%A9-%EB%B0%8F-%EC%99%B8%EB%B6%80-%EC%A0%91%EC%86%8D-%EC%84%A4%EC%A0%95(feat.-%EC%9A%B0%EB%B6%84%ED%88%AC,-sk%EA%B3%B5%EC%9C%A0%EA%B8%B0)-2/" />
+    <author>
+      <name>cotes</name>
+    </author>
+
+  
+    
+    <category term="가상화" />
+    
+    <category term="ubuntu" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      앞에서 내컴퓨터와 가상화서버의 ubuntu와의 연결을 깔끔하게 끝냈었다.
+
+이젠 DDNS를 적용해서 외부에서 DDNS로 접속했을 때 뜨는 것 까지만 하게되면 완료가 된다.
+
+우선 내가 그린 그림으로 설명하겠다. 못보겠어도 봐주자..
+
+
+
+현재 SK를 사용하는 나로써는 공인IP를 모뎀이 받아서 사설IP로 뿌려주는 환경이였다.
+
+처음에 모뎀이 왜 그냥 연결만해서 공인IP를 그대로 보내줘야 하는게 아닌가 생각을 했었다.
+
+저 모뎀이 특수한 모뎀이라 공유기 기능까지 하기 때문에 공인IP로 받아 사설IP로 변환을 해주었다.
+
+여기서 그냥 사설IP로 DDNS를 하려고 하다보니 SK모뎀에 포트포워딩이 10개 밖에 안되던걸 보았다..
+
+그래서 그냥 공인IP를 그대로 데스크탑에 받아서 데스크탑에서 방화벽을 사용해서 포...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>

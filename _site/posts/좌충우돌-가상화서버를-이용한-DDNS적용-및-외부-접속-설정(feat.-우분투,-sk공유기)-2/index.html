@@ -35,27 +35,27 @@
   
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.2" />
-<meta property="og:title" content="MacOS에 MariaDB server 설치 해보자." />
+<meta property="og:title" content="좌충우돌 가상화서버를 이용한 DDNS적용 및 외부 접속 설정(feat. 우분투, sk공유기)" />
 <meta name="author" content="rokwonkk" />
 <meta property="og:locale" content="ko" />
-<meta name="description" content="선행 작업 Hombrew 설치 1 /bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&quot;" />
-<meta property="og:description" content="선행 작업 Hombrew 설치 1 /bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&quot;" />
-<link rel="canonical" href="http://localhost:4000/posts/macOS%EC%97%90-MariaDB-Server-%EC%84%A4%EC%B9%98/" />
-<meta property="og:url" content="http://localhost:4000/posts/macOS%EC%97%90-MariaDB-Server-%EC%84%A4%EC%B9%98/" />
+<meta name="description" content="앞에서 내컴퓨터와 가상화서버의 ubuntu와의 연결을 깔끔하게 끝냈었다." />
+<meta property="og:description" content="앞에서 내컴퓨터와 가상화서버의 ubuntu와의 연결을 깔끔하게 끝냈었다." />
+<link rel="canonical" href="http://localhost:4000/posts/%EC%A2%8C%EC%B6%A9%EC%9A%B0%EB%8F%8C-%EA%B0%80%EC%83%81%ED%99%94%EC%84%9C%EB%B2%84%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-DDNS%EC%A0%81%EC%9A%A9-%EB%B0%8F-%EC%99%B8%EB%B6%80-%EC%A0%91%EC%86%8D-%EC%84%A4%EC%A0%95(feat.-%EC%9A%B0%EB%B6%84%ED%88%AC,-sk%EA%B3%B5%EC%9C%A0%EA%B8%B0)-2/" />
+<meta property="og:url" content="http://localhost:4000/posts/%EC%A2%8C%EC%B6%A9%EC%9A%B0%EB%8F%8C-%EA%B0%80%EC%83%81%ED%99%94%EC%84%9C%EB%B2%84%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-DDNS%EC%A0%81%EC%9A%A9-%EB%B0%8F-%EC%99%B8%EB%B6%80-%EC%A0%91%EC%86%8D-%EC%84%A4%EC%A0%95(feat.-%EC%9A%B0%EB%B6%84%ED%88%AC,-sk%EA%B3%B5%EC%9C%A0%EA%B8%B0)-2/" />
 <meta property="og:site_name" content="rokwonkk" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2023-12-03T13:52:10+09:00" />
+<meta property="article:published_time" content="2024-01-01T16:26:00+09:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="MacOS에 MariaDB server 설치 해보자." />
+<meta property="twitter:title" content="좌충우돌 가상화서버를 이용한 DDNS적용 및 외부 접속 설정(feat. 우분투, sk공유기)" />
 <meta name="twitter:site" content="@twitter_username" />
 <meta name="twitter:creator" content="@rokwonkk" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"rokwonkk","url":"https://github.com/rokwonkk/"},"dateModified":"2023-12-05T20:01:41+09:00","datePublished":"2023-12-03T13:52:10+09:00","description":"선행 작업 Hombrew 설치 1 /bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&quot;","headline":"MacOS에 MariaDB server 설치 해보자.","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/macOS%EC%97%90-MariaDB-Server-%EC%84%A4%EC%B9%98/"},"url":"http://localhost:4000/posts/macOS%EC%97%90-MariaDB-Server-%EC%84%A4%EC%B9%98/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"rokwonkk","url":"https://github.com/rokwonkk/"},"dateModified":"2024-01-01T16:26:00+09:00","datePublished":"2024-01-01T16:26:00+09:00","description":"앞에서 내컴퓨터와 가상화서버의 ubuntu와의 연결을 깔끔하게 끝냈었다.","headline":"좌충우돌 가상화서버를 이용한 DDNS적용 및 외부 접속 설정(feat. 우분투, sk공유기)","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/%EC%A2%8C%EC%B6%A9%EC%9A%B0%EB%8F%8C-%EA%B0%80%EC%83%81%ED%99%94%EC%84%9C%EB%B2%84%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-DDNS%EC%A0%81%EC%9A%A9-%EB%B0%8F-%EC%99%B8%EB%B6%80-%EC%A0%91%EC%86%8D-%EC%84%A4%EC%A0%95(feat.-%EC%9A%B0%EB%B6%84%ED%88%AC,-sk%EA%B3%B5%EC%9C%A0%EA%B8%B0)-2/"},"url":"http://localhost:4000/posts/%EC%A2%8C%EC%B6%A9%EC%9A%B0%EB%8F%8C-%EA%B0%80%EC%83%81%ED%99%94%EC%84%9C%EB%B2%84%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-DDNS%EC%A0%81%EC%9A%A9-%EB%B0%8F-%EC%99%B8%EB%B6%80-%EC%A0%91%EC%86%8D-%EC%84%A4%EC%A0%95(feat.-%EC%9A%B0%EB%B6%84%ED%88%AC,-sk%EA%B3%B5%EC%9C%A0%EA%B8%B0)-2/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
 
-  <title>MacOS에 MariaDB server 설치 해보자. | rokwonkk
+  <title>좌충우돌 가상화서버를 이용한 DDNS적용 및 외부 접속 설정(feat. 우분투, sk공유기) | rokwonkk
   </title>
 
   <!--
@@ -477,7 +477,7 @@
         
           
             
-              <span>MacOS에 MariaDB server 설치 해보자.</span>
+              <span>좌충우돌 가상화서버를 이용한 DDNS적용 및 외부 접속 설정(feat. 우분투, sk공유기)</span>
             
 
           
@@ -747,6 +747,699 @@
     <!-- combine -->
     
   
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
 
   
 
@@ -816,6 +1509,21 @@
 
       
     
+
+    
+  
+
+  
+  
+
+  
+    
+    
+
+    
+      
+        
+        
       
 
       
@@ -840,11 +1548,6 @@
     
 
     
-  
-
-  
-  
-
   
 
   
@@ -867,7 +1570,7 @@
 
 <article class="px-1">
   <header>
-    <h1 data-toc-skip>MacOS에 MariaDB server 설치 해보자.</h1>
+    <h1 data-toc-skip>좌충우돌 가상화서버를 이용한 DDNS적용 및 외부 접속 설정(feat. 우분투, sk공유기)</h1>
 
     <div class="post-meta text-muted">
       <!-- published date -->
@@ -883,41 +1586,18 @@
 
 <time
   
-  data-ts="1701579130"
+  data-ts="1704093960"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Dec  3, 2023
+  Jan  1, 2024
 </time>
 
       </span>
 
       <!-- lastmod date -->
-      
-        <span>
-          Updated
-          <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1701774101"
-  data-df="ll"
-  
-    data-bs-toggle="tooltip" data-bs-placement="bottom"
-  
->
-  Dec  5, 2023
-</time>
-
-        </span>
       
 
       
@@ -960,9 +1640,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="419 words"
+  title="1648 words"
 >
-  <em>2 min</em> read</span>
+  <em>9 min</em> read</span>
 
       </div>
       <!-- .d-flex -->
@@ -971,86 +1651,167 @@
   </header>
 
   <div class="content">
-    <h2 id="선행-작업"><span class="me-2">선행 작업</span><a href="#선행-작업" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-<p>Hombrew 설치</p>
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+    <p>앞에서 내컴퓨터와 가상화서버의 <code class="language-plaintext highlighter-rouge">ubuntu</code>와의 연결을 깔끔하게 끝냈었다.</p>
+
+<p>이젠 DDNS를 적용해서 외부에서 DDNS로 접속했을 때 뜨는 것 까지만 하게되면 완료가 된다.</p>
+
+<p>우선 내가 그린 그림으로 설명하겠다. 못보겠어도 봐주자..</p>
+
+<p><a href="https://github.com/rokwonkk/testgit/assets/117067171/cfdd67db-3ba1-4065-9281-4cd934c4a790" class="popup img-link  shimmer"><img src="https://github.com/rokwonkk/testgit/assets/117067171/cfdd67db-3ba1-4065-9281-4cd934c4a790" alt="우리집네트워크" loading="lazy"></a></p>
+
+<p>현재 SK를 사용하는 나로써는 <code class="language-plaintext highlighter-rouge">공인IP</code>를 모뎀이 받아서 <code class="language-plaintext highlighter-rouge">사설IP</code>로 뿌려주는 환경이였다.</p>
+
+<p>처음에 모뎀이 왜 그냥 연결만해서 <code class="language-plaintext highlighter-rouge">공인IP</code>를 그대로 보내줘야 하는게 아닌가 생각을 했었다.</p>
+
+<p>저 모뎀이 특수한 모뎀이라 공유기 기능까지 하기 때문에 <code class="language-plaintext highlighter-rouge">공인IP</code>로 받아 <code class="language-plaintext highlighter-rouge">사설IP</code>로 변환을 해주었다.</p>
+
+<p>여기서 그냥 <code class="language-plaintext highlighter-rouge">사설IP</code>로 DDNS를 하려고 하다보니 SK모뎀에 포트포워딩이 10개 밖에 안되던걸 보았다..</p>
+
+<p>그래서 그냥 <code class="language-plaintext highlighter-rouge">공인IP</code>를 그대로 데스크탑에 받아서 데스크탑에서 방화벽을 사용해서 포트 통신 할 수 있게 구성을 할 것이다.</p>
+
+<p><br /></p>
+
+<p><a href="https://github.com/rokwonkk/testgit/assets/117067171/08482d40-3aa2-4fd2-8102-a478a63c718c" class="popup img-link  shimmer"><img src="https://github.com/rokwonkk/testgit/assets/117067171/08482d40-3aa2-4fd2-8102-a478a63c718c" alt="우리집네트워크3" loading="lazy"></a></p>
+
+<p>이런 구성이 되겠다.</p>
+
+<p>그럼이제 저기 모뎀에서 뭔가 그대로 할 수 있는게 있는지 알아보니</p>
+
+<p>저기 모뎀을 브릿지 모드로 바꾸기만하면 기존에 공유기역할을 꺼버리고 그냥 모뎀역할만 하게 동작을 바꾸게 된다.</p>
+
+<p><br /></p>
+
+<p><a href="https://github.com/rokwonkk/testgit/assets/117067171/9df77475-108a-49db-a221-a99bb702489e" class="popup img-link  shimmer"><img src="https://github.com/rokwonkk/testgit/assets/117067171/9df77475-108a-49db-a221-a99bb702489e" alt="우리집네트워크1" loading="lazy"></a></p>
+
+<p>따로 SK공유기는 <code class="language-plaintext highlighter-rouge">공인IP</code>를 받더라도 쟤는 상관없기 때문에 그냥 놔두면된다.</p>
+
+<p>나는 데스크탑을 서버컴퓨터로 바꿔서 DDNS로 외부를 접속할 수 있게 구성할 것이다.</p>
+
+<p>자 이제 시작하겠다.</p>
+
+<h2 id="셋팅작업"><span class="me-2">셋팅작업</span><a href="#셋팅작업" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h3 id="모뎀-브릿지-모드-설정"><span class="me-2">모뎀 브릿지 모드 설정</span><a href="#모뎀-브릿지-모드-설정" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<p>우선 내가 사용하고 있는 sk 모뎀은 H614G 모델이다.</p>
+
+<p>요즘 SK 브로드밴드의 모뎀은 이걸로 사용된다고 한다.</p>
+
+<p>여기 관리자 페이지 접속은 웹페이지에서 192.168.55.1 치면된다. (iptime의 관리자 페이지 기본 192.168.0.1 처럼)</p>
+
+<p><a href="https://github.com/rokwonkk/testgit/assets/117067171/ed796b08-2f12-4e5f-ad6a-7839b7d99b51" class="popup img-link  shimmer"><img src="https://github.com/rokwonkk/testgit/assets/117067171/ed796b08-2f12-4e5f-ad6a-7839b7d99b51" alt="1" loading="lazy"></a></p>
+
+<p>여기서 앞 6자리는 모뎀 하단을 보면</p>
+
+<p><a href="https://github.com/rokwonkk/testgit/assets/117067171/1498ab20-4526-48c7-b031-699140dff110" class="popup img-link  shimmer"><img src="https://github.com/rokwonkk/testgit/assets/117067171/1498ab20-4526-48c7-b031-699140dff110" alt="2" loading="lazy"></a></p>
+
+<p>이렇게 나와 있는데, WAN 번호의 끝에서 6자리까지가 비밀번호의 앞 6자리가 되겠다.</p>
+
+<p><a href="https://github.com/rokwonkk/testgit/assets/117067171/d5497e6f-f68d-42fe-8d84-247220670305" class="popup img-link  shimmer"><img src="https://github.com/rokwonkk/testgit/assets/117067171/d5497e6f-f68d-42fe-8d84-247220670305" alt="4" loading="lazy"></a></p>
+
+<p>들어가게되면 WAN -&gt; 모드가 NAT으로 되어있는데, 이게 공유기 모드이다.</p>
+
+<p>브릿지로 변경을 해주면 <code class="language-plaintext highlighter-rouge">사설IP</code>로 변환이 안되고 <code class="language-plaintext highlighter-rouge">공인IP</code>를 그대로 보내주는 진짜 모뎀 역할만을 하게 된다.</p>
+
+<p><code class="language-plaintext highlighter-rouge">저장버튼</code>을 눌러준다.</p>
+
+<p><a href="https://github.com/rokwonkk/testgit/assets/117067171/ccd6db26-d17b-4b32-a3f9-e733c4c2725f" class="popup img-link  shimmer"><img src="https://github.com/rokwonkk/testgit/assets/117067171/ccd6db26-d17b-4b32-a3f9-e733c4c2725f" alt="7" loading="lazy"></a></p>
+
+<p>이제 자동으로 재부팅을 하는데 공유기 모드에서 모뎀 모드로 바꾸게 되면 이제 더이상 관리자페이지 접속이 불가능하다.</p>
+
+<p>혹시나 나중에 셋팅을 바꾸어야 한다면 모뎀의 뒤쪽에 reset버튼을 5초동안만 꾸욱 눌러주면</p>
+
+<p>1~2분 이내에 자동으로 초기화를 시켜줌으로 관리자 페이지에 들어 갈 수 있을 것이다.</p>
+
+<p>마지막으로 눈으로 확인은 꼭 해주자.</p>
+
+<p><code class="language-plaintext highlighter-rouge">cmd</code> 창에서 ipconfig를 입력해주자.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre>/bin/bash <span class="nt">-c</span> <span class="s2">"</span><span class="si">$(</span>curl <span class="nt">-fsSL</span> https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span class="si">)</span><span class="s2">"</span>
+</pre></td><td class="rouge-code"><pre>ifconfig
 </pre></td></tr></tbody></table></code></div></div>
 
-<p>아 혹시 패스워드를 묻는다면 자기 맥OS의 패스워드를 입력 해준다.</p>
+<p><a href="https://github.com/rokwonkk/testgit/assets/117067171/85bf7859-94d5-42f6-b1e8-5fe59583e948" class="popup img-link  shimmer"><img src="https://github.com/rokwonkk/testgit/assets/117067171/85bf7859-94d5-42f6-b1e8-5fe59583e948" alt="5" loading="lazy"></a></p>
 
-<h2 id="homebrew로-mariadb-server-설치"><span class="me-2">Homebrew로 MariaDB server 설치</span><a href="#homebrew로-mariadb-server-설치" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-<p>명령어를 터미널에 입력 해본다</p>
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+<p>이렇게 확인을 하면 이제 <code class="language-plaintext highlighter-rouge">공인IP</code>를 데스크탑에까지 땡겨오게 되었다.</p>
+
+<p>이제 이 <code class="language-plaintext highlighter-rouge">공인IP</code>를 가지고 DDNS연결을 해주면 거의 끝이난다.</p>
+
+<h3 id="ddns-설정-no-ip"><span class="me-2">DDNS 설정 (no-ip)</span><a href="#ddns-설정-no-ip" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<p>무료 DDNS를 설정 할 수 있는 사이트를 찾다보니 <code class="language-plaintext highlighter-rouge">no-ip</code>라는 사이트를 찾았다.</p>
+
+<p>비록 30일 무료고 다시 사용하려면 재인증을 해 주어야하지만. 나에겐 감지덕지 감사합니다이다.</p>
+
+<p><a href="https://www.noip.com/">https://www.noip.com/</a></p>
+
+<p><a href="https://github.com/rokwonkk/testgit/assets/117067171/726720ef-7ad8-4840-9608-cf3d3195d487" class="popup img-link  shimmer"><img src="https://github.com/rokwonkk/testgit/assets/117067171/726720ef-7ad8-4840-9608-cf3d3195d487" alt="6" loading="lazy"></a></p>
+
+<p>사이트를 접속하여 쭉 스크롤 내려서 <code class="language-plaintext highlighter-rouge">Sign Up For Free</code>가 보이면 눌러서 들어가 주자</p>
+
+<p><br /></p>
+
+<p><a href="https://github.com/rokwonkk/testgit/assets/117067171/22262c15-0ce6-4122-b7a9-dec392aa16d0" class="popup img-link  shimmer"><img src="https://github.com/rokwonkk/testgit/assets/117067171/22262c15-0ce6-4122-b7a9-dec392aa16d0" alt="7" loading="lazy"></a></p>
+
+<p>필요한거 기입해주고, 신용카드 정보들 이런거 나오면 기입 안해주어도 된다. <br />
+나는 Free를 쓸거니까. 메일인증 이런것들은 따로 올리지 않겠다 가입이 끝나서 들어와보면 <code class="language-plaintext highlighter-rouge">Dashboard</code>가 보일 것이다.</p>
+
+<p><a href="https://github.com/rokwonkk/testgit/assets/117067171/4a111a45-04e7-4330-94e4-dcebfefdff98" class="popup img-link  shimmer"><img src="https://github.com/rokwonkk/testgit/assets/117067171/4a111a45-04e7-4330-94e4-dcebfefdff98" alt="8" loading="lazy"></a></p>
+
+<p><a href="https://github.com/rokwonkk/testgit/assets/117067171/082334aa-997b-4508-9620-f0776a27b8a5" class="popup img-link  shimmer"><img src="https://github.com/rokwonkk/testgit/assets/117067171/082334aa-997b-4508-9620-f0776a27b8a5" alt="9" loading="lazy"></a></p>
+
+<p>그럼 여기서 <code class="language-plaintext highlighter-rouge">No-IP Hostnames</code> -&gt; <code class="language-plaintext highlighter-rouge">Create Hostname</code>에 들어가게되면</p>
+
+<p><code class="language-plaintext highlighter-rouge">Hostname</code>, <code class="language-plaintext highlighter-rouge">Domain</code>, <code class="language-plaintext highlighter-rouge">IPv4 Address</code>를 기입해주면 된다
+설명은 사진에다가 해놓아서 따로 설명은 하지 않겠다.</p>
+
+<p><code class="language-plaintext highlighter-rouge">Record Type</code>은 그대로 두고 <code class="language-plaintext highlighter-rouge">create Hostname</code>버튼을 클릭 해준다.</p>
+
+<p><a href="https://github.com/rokwonkk/testgit/assets/117067171/463d89f3-8a3f-427c-860c-3587e6bf9710" class="popup img-link  shimmer"><img src="https://github.com/rokwonkk/testgit/assets/117067171/463d89f3-8a3f-427c-860c-3587e6bf9710" alt="10" loading="lazy"></a></p>
+
+<p>짜란 ~ 이러면 DDNS 설정도 끝이 났다.
+DDNS Key를 가지고 당장에 무엇을 할 것이 아니라서 나는 냅두지만
+저 DDNS Key를 가지고 무엇을 할 생각이라면 create해서 처음에 나온 정보들을 캡쳐나 따로 기입해서 꼭 저장해 두자. 안그럼 다시 발급 받아야하니 귀찮을 지도..</p>
+
+<p><br /></p>
+
+<h2 id="접속-확인"><span class="me-2">접속 확인</span><a href="#접속-확인" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>자 이제 ssh로 접속을 할껀데 ip가 아닌 DDNS로 접속을 시도 할 것이다.</p>
+
+<p>윈도우 cmd에서 아래의 명령어를 실행시켜보자 (connecting : yes, password는 앞에서 다뤘어서 생략)</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre>brew <span class="nb">install </span>mariadb
+</pre></td><td class="rouge-code"><pre>ssh [ubuntu계정]@[만든DDNS주소] (예 : ssh rokwonkk@rokwonkk.ddns.net)
 </pre></td></tr></tbody></table></code></div></div>
-<p>그럼 설치가 끝났다. 정말 쉽다.</p>
+<p>두구두구두구</p>
 
-<h2 id="mariadb-실행"><span class="me-2">MariaDB 실행</span><a href="#mariadb-실행" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-<p>명령어를 터미널에 입력해 준다.</p>
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre>mysql.server start
-</pre></td></tr></tbody></table></code></div></div>
+<p><a href="https://github.com/rokwonkk/testgit/assets/117067171/484644dc-b3ff-4173-ba94-a2ad3136037a" class="popup img-link  shimmer"><img src="https://github.com/rokwonkk/testgit/assets/117067171/484644dc-b3ff-4173-ba94-a2ad3136037a" alt="12성공!" loading="lazy"></a></p>
 
-<p><a href="https://github.com/rokwonkk/rokwonkk.github.io/assets/117067171/63ecc38b-303f-4b03-8562-aa10d8e09283" class="popup img-link  shimmer"><img src="https://github.com/rokwonkk/rokwonkk.github.io/assets/117067171/63ecc38b-303f-4b03-8562-aa10d8e09283" alt="mariadb" loading="lazy"></a></p>
+<p>성공했다! 이럼 DDNS 적용까지 끝이 났다.</p>
 
-<p>SUCCESS! 가 보이면 실행이 됐다고 볼 수 있다. 어렵지 않다.</p>
+<p><br /></p>
 
-<h2 id="자동-실행"><span class="me-2">자동 실행</span><a href="#자동-실행" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-<p>자동 실행은 brew를 이용해서 해야합니다.
-아래의 명령어를 입력해 줍니다.</p>
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre>brew services start mariadb
-</pre></td></tr></tbody></table></code></div></div>
+<h2 id="글을-마치며"><span class="me-2">글을 마치며..</span><a href="#글을-마치며" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<h2 id="root-계정-접속"><span class="me-2">root 계정 접속</span><a href="#root-계정-접속" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-<p>root 계정으로 접속 할때는 아래 명령어를 입력해준다.</p>
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre>mysql <span class="nt">-u</span> root <span class="nt">-p</span> 
-</pre></td></tr></tbody></table></code></div></div>
+<p>처음에 공유기 설정부터 문제가 많았다.</p>
 
-<h2 id="이슈"><span class="me-2">이슈</span><a href="#이슈" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-<p>윈도우 환경이나 리눅스 환경에서는 계정 설정이 쉬웠지만</p>
+<p>모뎀을 생각못하고 계속 거실에 있는 잘못없는 SK공유기(와이파이) 만 열심히 괴롭혔는데,</p>
 
-<p>DB 툴로 붙으려고 하니 비밀번호가 계속 틀렸다고 한다. 원래 기본 비밀번호가 있는데..</p>
+<p>이상해서 벽면 쪽의 통신단자함을 까고서야 문제없는 친구만 괴롭혔다는것을 깨닳았다.</p>
 
-<p>그래서 마리아DB에 접속을 해서 직접 비밀번호를 셋팅을 해주어야한다.</p>
+<p>이렇게 했지만 나중에 DDNS를 편하게 사용하기위해서 DDNS지원되는 공유기를 사면은 이제 데스크탑선을 공유기에 연결시켜서 그 공유기에서 데스크탑으로 연결만해주면 되니까 언젠간 필요했을 일이였다고 생각한다.</p>
 
-<div class="language-sql highlighter-rouge"><div class="code-header">
-        <span data-label-text="Sql"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-</pre></td><td class="rouge-code"><pre><span class="k">set</span> <span class="n">password</span> <span class="k">for</span> <span class="s1">'root'</span><span class="o">@</span><span class="s1">'localhost'</span> <span class="o">=</span> <span class="n">password</span><span class="p">(</span><span class="s1">'비밀번호'</span><span class="p">);</span>
+<p>물론 나는 SK기준이기 때문에 LG, KT를 사용하는 분들은 설정페이지가 다를 수 있기 때문에 그것 직접 알아보길 바란다.</p>
 
-<span class="n">flush</span> <span class="k">privileges</span><span class="p">;</span> 
-</pre></td></tr></tbody></table></code></div></div>
+<p>이상 외부로 url로 데스크탑에 붙을 수 있기 때문에 이 데스크탑을 서버컴퓨터로 이것저것 세팅 작업을 해 볼 것이다.</p>
 
-<blockquote>
-  <p>확인</p>
-</blockquote>
+<p><br /></p>
 
-<p><a href="https://github.com/rokwonkk/rokwonkk.github.io/assets/117067171/4c0950ab-d3d1-42b3-b340-31bd133a3eb9" class="popup img-link  shimmer"><img src="https://github.com/rokwonkk/rokwonkk.github.io/assets/117067171/4c0950ab-d3d1-42b3-b340-31bd133a3eb9" alt="mariadb" loading="lazy"></a></p>
-
-<p>정상적으로 Password에 암호화가 되서 들어가 있는 것을 볼 수 있다.</p>
-
-<p><a href="https://github.com/rokwonkk/rokwonkk.github.io/assets/117067171/878dc583-f326-4ae8-8f74-6a15dcd09e84" class="popup img-link  shimmer"><img src="https://github.com/rokwonkk/rokwonkk.github.io/assets/117067171/878dc583-f326-4ae8-8f74-6a15dcd09e84" alt="mariadb" loading="lazy"></a>
-마지막으로 툴에서 접속 Test까지 하면 끝이 난다.</p>
-
-<p>첫 포스팅이라서 많이 부족한 부분도 많고, 
-마크다운 문법도 처음 사용하고해서 다사다난 하지만</p>
-
-<p>자주 사용해보고 친해져서 갈수록 깔끔하며 나아진 모습을 보이도록 하겠다.</p>
+<h2 id="reference"><span class="me-2">reference</span><a href="#reference" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p><a href="https://blog.naver.com/hacaprio/221236497518">https://blog.naver.com/hacaprio/221236497518</a> -&gt; h614g 모뎀 브릿지 모드 <br />
+<a href="https://m.blog.naver.com/kangyh5/222759949259">https://m.blog.naver.com/kangyh5/222759949259</a> -&gt; no-ip 설정 변경</p>
 
   </div>
 
@@ -1060,8 +1821,8 @@
       <div class="post-meta mb-3">
         <i class="far fa-folder-open fa-fw me-1"></i>
         
-          <a href="/categories/macos/">macOS</a>,
-          <a href="/categories/db/">DB</a>
+          <a href="/categories/%EA%B0%80%EC%83%81%ED%99%94/">가상화</a>,
+          <a href="/categories/ubuntu/">ubuntu</a>
       </div>
     
 
@@ -1074,6 +1835,41 @@
             href="/tags/setting/"
             class="post-tag no-text-decoration"
           >setting</a>
+        
+          <a
+            href="/tags/%EA%B0%80%EC%83%81%ED%99%94/"
+            class="post-tag no-text-decoration"
+          >가상화</a>
+        
+          <a
+            href="/tags/ubuntu/"
+            class="post-tag no-text-decoration"
+          >ubuntu</a>
+        
+          <a
+            href="/tags/linux/"
+            class="post-tag no-text-decoration"
+          >linux</a>
+        
+          <a
+            href="/tags/ddns/"
+            class="post-tag no-text-decoration"
+          >DDNS</a>
+        
+          <a
+            href="/tags/server/"
+            class="post-tag no-text-decoration"
+          >server</a>
+        
+          <a
+            href="/tags/no-ip/"
+            class="post-tag no-text-decoration"
+          >no-ip</a>
+        
+          <a
+            href="/tags/network/"
+            class="post-tag no-text-decoration"
+          >network</a>
         
       </div>
     
@@ -1109,21 +1905,21 @@
 
       
 
-      <a href="https://twitter.com/intent/tweet?text=MacOS%EC%97%90%20MariaDB%20server%20%EC%84%A4%EC%B9%98%20%ED%95%B4%EB%B3%B4%EC%9E%90.%20-%20rokwonkk&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FmacOS%25EC%2597%2590-MariaDB-Server-%25EC%2584%25A4%25EC%25B9%2598%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+      <a href="https://twitter.com/intent/tweet?text=%EC%A2%8C%EC%B6%A9%EC%9A%B0%EB%8F%8C%20%EA%B0%80%EC%83%81%ED%99%94%EC%84%9C%EB%B2%84%EB%A5%BC%20%EC%9D%B4%EC%9A%A9%ED%95%9C%20DDNS%EC%A0%81%EC%9A%A9%20%EB%B0%8F%20%EC%99%B8%EB%B6%80%20%EC%A0%91%EC%86%8D%20%EC%84%A4%EC%A0%95(feat.%20%EC%9A%B0%EB%B6%84%ED%88%AC,%20sk%EA%B3%B5%EC%9C%A0%EA%B8%B0)%20-%20rokwonkk&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25EC%25A2%258C%25EC%25B6%25A9%25EC%259A%25B0%25EB%258F%258C-%25EA%25B0%2580%25EC%2583%2581%25ED%2599%2594%25EC%2584%259C%25EB%25B2%2584%25EB%25A5%25BC-%25EC%259D%25B4%25EC%259A%25A9%25ED%2595%259C-DDNS%25EC%25A0%2581%25EC%259A%25A9-%25EB%25B0%258F-%25EC%2599%25B8%25EB%25B6%2580-%25EC%25A0%2591%25EC%2586%258D-%25EC%2584%25A4%25EC%25A0%2595%28feat.-%25EC%259A%25B0%25EB%25B6%2584%25ED%2588%25AC%2C-sk%25EA%25B3%25B5%25EC%259C%25A0%25EA%25B8%25B0%29-2%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
         <i class="fa-fw fa-brands fa-square-x-twitter"></i>
       </a>
     
 
       
 
-      <a href="https://www.facebook.com/sharer/sharer.php?title=MacOS%EC%97%90%20MariaDB%20server%20%EC%84%A4%EC%B9%98%20%ED%95%B4%EB%B3%B4%EC%9E%90.%20-%20rokwonkk&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FmacOS%25EC%2597%2590-MariaDB-Server-%25EC%2584%25A4%25EC%25B9%2598%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+      <a href="https://www.facebook.com/sharer/sharer.php?title=%EC%A2%8C%EC%B6%A9%EC%9A%B0%EB%8F%8C%20%EA%B0%80%EC%83%81%ED%99%94%EC%84%9C%EB%B2%84%EB%A5%BC%20%EC%9D%B4%EC%9A%A9%ED%95%9C%20DDNS%EC%A0%81%EC%9A%A9%20%EB%B0%8F%20%EC%99%B8%EB%B6%80%20%EC%A0%91%EC%86%8D%20%EC%84%A4%EC%A0%95(feat.%20%EC%9A%B0%EB%B6%84%ED%88%AC,%20sk%EA%B3%B5%EC%9C%A0%EA%B8%B0)%20-%20rokwonkk&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25EC%25A2%258C%25EC%25B6%25A9%25EC%259A%25B0%25EB%258F%258C-%25EA%25B0%2580%25EC%2583%2581%25ED%2599%2594%25EC%2584%259C%25EB%25B2%2584%25EB%25A5%25BC-%25EC%259D%25B4%25EC%259A%25A9%25ED%2595%259C-DDNS%25EC%25A0%2581%25EC%259A%25A9-%25EB%25B0%258F-%25EC%2599%25B8%25EB%25B6%2580-%25EC%25A0%2591%25EC%2586%258D-%25EC%2584%25A4%25EC%25A0%2595%28feat.-%25EC%259A%25B0%25EB%25B6%2584%25ED%2588%25AC%2C-sk%25EA%25B3%25B5%25EC%259C%25A0%25EA%25B8%25B0%29-2%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
         <i class="fa-fw fab fa-facebook-square"></i>
       </a>
     
 
       
 
-      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FmacOS%25EC%2597%2590-MariaDB-Server-%25EC%2584%25A4%25EC%25B9%2598%2F&text=MacOS%EC%97%90%20MariaDB%20server%20%EC%84%A4%EC%B9%98%20%ED%95%B4%EB%B3%B4%EC%9E%90.%20-%20rokwonkk" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
+      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25EC%25A2%258C%25EC%25B6%25A9%25EC%259A%25B0%25EB%258F%258C-%25EA%25B0%2580%25EC%2583%2581%25ED%2599%2594%25EC%2584%259C%25EB%25B2%2584%25EB%25A5%25BC-%25EC%259D%25B4%25EC%259A%25A9%25ED%2595%259C-DDNS%25EC%25A0%2581%25EC%259A%25A9-%25EB%25B0%258F-%25EC%2599%25B8%25EB%25B6%2580-%25EC%25A0%2591%25EC%2586%258D-%25EC%2584%25A4%25EC%25A0%2595%28feat.-%25EC%259A%25B0%25EB%25B6%2584%25ED%2588%25AC%2C-sk%25EA%25B3%25B5%25EC%259C%25A0%25EA%25B8%25B0%29-2%2F&text=%EC%A2%8C%EC%B6%A9%EC%9A%B0%EB%8F%8C%20%EA%B0%80%EC%83%81%ED%99%94%EC%84%9C%EB%B2%84%EB%A5%BC%20%EC%9D%B4%EC%9A%A9%ED%95%9C%20DDNS%EC%A0%81%EC%9A%A9%20%EB%B0%8F%20%EC%99%B8%EB%B6%80%20%EC%A0%91%EC%86%8D%20%EC%84%A4%EC%A0%95(feat.%20%EC%9A%B0%EB%B6%84%ED%88%AC,%20sk%EA%B3%B5%EC%9C%A0%EA%B8%B0)%20-%20rokwonkk" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
         <i class="fa-fw fab fa-telegram"></i>
       </a>
     
@@ -1600,7 +2396,7 @@
         </article>
       
         <article class="col">
-          <a href="/posts/%EC%A2%8C%EC%B6%A9%EC%9A%B0%EB%8F%8C-%EA%B0%80%EC%83%81%ED%99%94%EC%84%9C%EB%B2%84%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-DDNS%EC%A0%81%EC%9A%A9-%EB%B0%8F-%EC%99%B8%EB%B6%80-%EC%A0%91%EC%86%8D-%EC%84%A4%EC%A0%95(feat.-%EC%9A%B0%EB%B6%84%ED%88%AC,-sk%EA%B3%B5%EC%9C%A0%EA%B8%B0)-2/" class="post-preview card h-100">
+          <a href="/posts/macOS%EC%97%90-MariaDB-Server-%EC%84%A4%EC%B9%98/" class="post-preview card h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -1612,14 +2408,14 @@
 
 <time
   
-  data-ts="1704093960"
+  data-ts="1701579130"
   data-df="ll"
   
 >
-  Jan  1, 2024
+  Dec  3, 2023
 </time>
 
-              <h4 class="pt-0 my-2">좌충우돌 가상화서버를 이용한 DDNS적용 및 외부 접속 설정(feat. 우분투, sk공유기)</h4>
+              <h4 class="pt-0 my-2">MacOS에 MariaDB server 설치 해보자.</h4>
               <div class="text-muted">
                 <p>
                   
@@ -1628,17 +2424,15 @@
 
 
 
-                  앞에서 내컴퓨터와 가상화서버의 ubuntu와의 연결을 깔끔하게 끝냈었다.
-
-이젠 DDNS를 적용해서 외부에서 DDNS로 접속했을 때 뜨는 것 까지만 하게되면 완료가 된다.
-
-우선 내가 그린 그림으로 설명하겠다. 못보겠어도 봐주자..
+                  선행 작업
+Hombrew 설치
+/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&quot;
 
 
+아 혹시 패스워드를 묻는다면 자기 맥OS의 패스워드를 입력 해준다.
 
-현재 SK를 사용하는 나로써는 공인IP를 모뎀이 받아서 사설IP로 뿌려주는 환경이였다.
-
-처음에 모뎀이 왜 그냥 연...
+Homebrew로 MariaDB server 설치
+명령어를 터미널에 입력 해본...
                 </p>
               </div>
             </div>
@@ -1659,19 +2453,19 @@
   
 
   
-    <div class="btn btn-outline-primary disabled" aria-label="Older">
-      <p>-</p>
-    </div>
-  
-
-  
     <a
       href="/posts/%EC%A2%8C%EC%B6%A9%EC%9A%B0%EB%8F%8C-%EA%B0%80%EC%83%81%ED%99%94%EC%84%9C%EB%B2%84%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-DDNS%EC%A0%81%EC%9A%A9-%EB%B0%8F-%EC%99%B8%EB%B6%80-%EC%A0%91%EC%86%8D-%EC%84%A4%EC%A0%95(feat.-%EC%9A%B0%EB%B6%84%ED%88%AC,-sk%EA%B3%B5%EC%9C%A0%EA%B8%B0)/"
       class="btn btn-outline-primary"
-      aria-label="Newer"
+      aria-label="Older"
     >
       <p>좌충우돌 가상화서버를 이용한 DDNS적용 및 외부 접속 설정(feat. 우분투, sk공유기)</p>
     </a>
+  
+
+  
+    <div class="btn btn-outline-primary disabled" aria-label="Newer">
+      <p>-</p>
+    </div>
   
 </nav>
 
